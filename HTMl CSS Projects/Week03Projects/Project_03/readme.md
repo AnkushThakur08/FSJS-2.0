@@ -1,10 +1,10 @@
-# Developer Landing Page
+# Strret Landing Page
 
 ![Hitesh Choudhary](https://img.shields.io/badge/Hitesh%20Choudhary-javaScript-brightgreen) ![iWriteCode](https://img.shields.io/badge/iWriteCode-LCO-green)
 
 ![Hitesh Choudhary](https://img.shields.io/badge/Hitesh%20Choudhary-JavaScript%20FullStack-orange)
 
-![](https://img.shields.io/badge/Developer%20Landing%20Page-HTML--CSS-yellow)
+![](https://img.shields.io/badge/Street%20Landing%20Page-HTML--CSS-yellow)
 
 ![](https://img.shields.io/badge/Assignment--3-StreetLanding%20Page-blue)
 

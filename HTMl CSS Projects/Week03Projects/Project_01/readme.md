@@ -1,12 +1,12 @@
-# Developer Landing Page
+# Digital Marketing Page
 
 ![Hitesh Choudhary](https://img.shields.io/badge/Hitesh%20Choudhary-javaScript-brightgreen) ![iWriteCode](https://img.shields.io/badge/iWriteCode-LCO-green)
 
 ![Hitesh Choudhary](https://img.shields.io/badge/Hitesh%20Choudhary-JavaScript%20FullStack-orange)
 
-![](https://img.shields.io/badge/Developer%20Landing%20Page-HTML--CSS-yellow)
+![](https://img.shields.io/badge/Digital%20Marketing%20Page-HTML--CSS-yellow)
 
-![](https://img.shields.io/badge/Assignment--1-StreetLanding%20Page-blue)
+![](https://img.shields.io/badge/Assignment--1-DigitalMarketing%20Page-blue)
 
 <!-- ### LIVE LINK -->
 
