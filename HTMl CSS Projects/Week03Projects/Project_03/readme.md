@@ -30,7 +30,7 @@
 
 # SCREEN SHOT OF PROJECT
 
-[![Image Text](./1.png)]
+![](./1.png)
 
 ## Time Taken to Complete the Project
 
