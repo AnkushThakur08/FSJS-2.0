@@ -8,9 +8,9 @@
 
 ![](https://img.shields.io/badge/Assignment--1-VSCODE%20Page-blue)
 
-<!-- ### LIVE LINK -->
+### LIVE LINK
 
-<!-- [Developer Landing page](https://ankush-landingpage.netlify.app/) -->
+[Click Here to visit Hosting Landing Page](https://ankush-vscode-page.netlify.app/)
 
 ---
 
