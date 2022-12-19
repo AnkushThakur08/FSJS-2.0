@@ -6,7 +6,7 @@
 
 ![](https://img.shields.io/badge/Developer%20Landing%20Page-HTML--CSS-yellow)
 
-![](https://img.shields.io/badge/Assignment--1-StreetLanding%20Page-blue)
+![](https://img.shields.io/badge/Assignment--3-StreetLanding%20Page-blue)
 
 <!-- ### LIVE LINK -->
 
@@ -30,7 +30,7 @@
 
 # SCREEN SHOT OF PROJECT
 
-[![Image Text](./1.png)](https://google.com)
+[![Image Text](./1.png)]
 
 ## Time Taken to Complete the Project
 

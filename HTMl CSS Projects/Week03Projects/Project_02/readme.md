@@ -6,7 +6,7 @@
 
 ![](https://img.shields.io/badge/Developer%20Landing%20Page-HTML--CSS-yellow)
 
-![](https://img.shields.io/badge/Assignment--1-StreetLanding%20Page-blue)
+![](https://img.shields.io/badge/Assignment--2-StreetLanding%20Page-blue)
 
 <!-- ### LIVE LINK -->
 
@@ -30,8 +30,8 @@
 
 # SCREEN SHOT OF PROJECT
 
-![](./4.png)
+![](./5.png)
 
 ## Time Taken to Complete the Project
 
-> 40 minutes
+> 1:20 Minutes
