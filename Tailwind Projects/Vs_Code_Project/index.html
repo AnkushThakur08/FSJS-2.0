@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VS Code - Educational Purpose</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-['Segoe UI', 'Helvetica Neue']">
+    <!-- Navbar -->
+    <nav class="bg-[#2C2C32] lg:flex lg:justify-around py-4 pb-6 sticky top-0">
+      <div class="flex">
+        <img
+          src="./images/logo.png"
+          alt="logo"
+          class="w-10 h-10 ml-3 lg:ml-28"
+        />
+        <p class="text-xl text-white ml-2 cursor-pointer">Visual Studio Code</p>
+      </div>
+
+      <ul
+        class="hidden lg:flex text-[#ABABAD] lg:text-base font-medium lg:-ml-[200px] lg:my-0.5 cursor-pointer"
+      >
+        <li
+          class="pl-5 hover:text-[#FEFEFE] transition-all duration-500 hover:scale-110"
+        >
+          Docs
+        </li>
+        <li
+          class="pl-5 hover:text-[#FEFEFE] transition-all duration-500 hover:scale-110"
+        >
+          Updates
+        </li>
+        <li
+          class="pl-5 hover:text-[#FEFEFE] transition-all duration-500 hover:scale-110"
+        >
+          Blog
+        </li>
+        <li
+          class="pl-5 hover:text-[#FEFEFE] transition-all duration-500 hover:scale-110"
+        >
+          Api
+        </li>
+        <li
+          class="pl-5 hover:text-[#FEFEFE] transition-all duration-500 hover:scale-110"
+        >
+          Extensions
+        </li>
+        <li
+          class="pl-5 hover:text-[#FEFEFE] transition-all duration-500 hover:scale-110"
+        >
+          FAQ
+        </li>
+        <li
+          class="pl-5 hover:text-[#FEFEFE] transition-all duration-500 hover:scale-110"
+        >
+          Learn
+        </li>
+      </ul>
+      <i
+        class="fa-solid fa-bars text-white p-1 mr-4 text-2xl float-right -mt-10 lg:hidden"
+      ></i>
+
+      <div class="hidden lg:block lg:-mt-5">
+        <input
+          type="search"
+          class="bg-[#525257] p-4"
+          placeholder="Search Docs"
+        />
+        <button
+          type="submit"
+          class="bg-[#005BCD] text-white text-xl font-semibold p-4 hover:bg-[#003980] transition-all duration-500 hover:scale-110"
+        >
+          Download
+        </button>
+      </div>
+    </nav>
+
+    <!-- Black Line -->
+    <div
+      class="bg-[#25252B] w-full p-1 flex justify-center text-center text-lg text-[#CCCCCC]"
+    >
+      <p>
+        <span
+          class="text-[#1398FF] cursor-pointer md:text-sm w-full lg:w-3/4 hover:underline"
+          >Version 1.73</span
+        >
+        is now available! Read about the new features and fixes from october
+      </p>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-[#2C2C32] lg:flex">
+      <div class="pt-4 lg:mt-5 text-center lg:max-w-2xl lg:w-1/2">
+        <h1 class="text-4xl lg:text-6xl text-white font-light">
+          Code editing.
+        </h1>
+        <h1 class="text-4xl lg:text-6xl text-white font-normal">Redefined.</h1>
+        <p class="ml-5 lg:center-center text-[#ABABAD] mt-3">
+          Free. Built on open source. Runs everywhere
+        </p>
+        <button
+          class="bg-[#005BCD] text-white text-xl font-semibold py-1 px-3 mt-5 transition-all duration-500 lg:px-9 hover:bg-[#003980] hover:scale-105"
+        >
+          Download for Windows
+
+          <p class="text-sm font-light mt-1">Stable Build</p>
+        </button>
+        <i
+          class="fa-sharp fa-solid fa-angle-down bg-[#005BCD] text-white pt-3 pb-8 px-4 -ml-0.5"
+        ></i>
+
+        <div class="flex justify-center">
+          <p
+            class="bg-[#25252B] text-[#1398FF] cursor-pointer text-sm w-72 p-1 ml-4 mt-5 lg:text-base lg:w-80 rounded-lg hover:underline"
+          >
+            Web, Insiders edition, <span class="text-[#ABABAD]">or</span> other
+            platform
+          </p>
+        </div>
+        <p class="text-xs text-[#ABABAD] mt-5">
+          By using VS Code, you agree to its
+        </p>
+        <p class="text-[#1398FF] cursor-pointer hover:underline">
+          license and privacy statement.
+        </p>
+      </div>
+      <div class="lg:w-1/2 pb-7">
+        <img
+          class="mt-5 p-3 lg:h-[500px] transition-all duration-500 ease-in cursor-pointer hover:scale-110"
+          src="./images/vs_code_img.PNG"
+          alt="vs code"
+          srcset=""
+        />
+      </div>
+    </header>
+
+    <!-- ICONS -->
+    <section
+      class="grid grid-cols-2 grid-rows-2 justify-items-center lg:justify-items-stretch mt-5 bg-white lg:pl-40 lg:grid-cols-4 lg:grid-rows-1"
+    >
+      <div class="p-4">
+        <i
+          class="fa-regular fa-lightbulb text-5xl lg:text-7xl cursor-pointer transition-all duration-500 hover:text-[#2E3192] hover:scale-110"
+        ></i>
+        <p class="text-gray-600 text-lg mt-3 -ml-4 lg:text-xl lg:-ml-5">
+          IntelliSense
+        </p>
+      </div>
+      <div class="p-4">
+        <i
+          class="fa-sharp fa-solid fa-play pl-5 lg:pl-0 text-5xl lg:text-7xl cursor-pointer transition-all duration-500 hover:text-[#37B34A] hover:scale-110"
+        ></i>
+        <p class="text-gray-600 text-xl mt-3 -ml-8 text-center lg:-ml-64">
+          Run And Debug
+        </p>
+      </div>
+      <div class="p-4 mb-4">
+        <i
+          class="fa-solid fa-code-branch text-5xl lg:text-7xl cursor-pointer transition-all duration-500 hover:text-[#F42534] hover:scale-110"
+        ></i>
+        <p class="text-gray-600 text-xl mt-3 -ml-4 lg:-ml-6">Built-in Git</p>
+      </div>
+      <div class="p-4">
+        <i
+          class="fa-solid fa-circle-nodes text-5xl cursor-pointer lg:text-7xl transition-all duration-500 hover:text-[#37B34A] hover:scale-110"
+        ></i>
+        <p class="text-gray-600 text-xl mt-3 -ml-4 lg:-ml-1">Extensions</p>
+      </div>
+    </section>
+
+    <!-- Card Section-1 -->
+    <section class="lg:flex justify-around p-5 lg:p-10">
+      <div class="mb-10 lg:w-2/5 lg:ml-40 lg:mb-0 text-center">
+        <img
+          src="./images/card_img_01.svg"
+          alt=""
+          sizes=""
+          srcset=""
+          class="w-3/5 m-auto transition-all duration-500 ease-in cursor-pointer hover:scale-110"
+        />
+      </div>
+      <div class="mb-20 lg:w-3/5 lg:ml-20">
+        <h1 class="text-xl font-light lg:text-3xl lg:pb-10 text-left">
+          Meet IntelliSense
+        </h1>
+        <p
+          class="text-base leading-8 mt-10 lg:mt-0 lg:text-lg lg:leading-10 lg:mr-60"
+        >
+          Go beyond syntax highlighting and autocomplete with IntelliSense,
+          which provides smart completions based on variable types, function
+          definitions, and imported modules.
+        </p>
+      </div>
+    </section>
+
+    <!-- Card Section-2 -->
+    <section class="bg-[#F5F5F5] lg:flex justify-around p-5 lg:p-10">
+      <div class="lg:w-3/5 lg:ml-20">
+        <h1 class="text-xl font-light lg:text-3xl lg:pb-10 text-left">
+          Print statement debugging is a thing of the past.
+        </h1>
+        <p
+          class="text-base leading-8 mt-10 lg:mt-0 lg:text-lg lg:leading-10 lg:mr-60"
+        >
+          Debug code right from the editor. Launch or attach to your running
+          apps and debug with break points, call stacks, and an interactive
+          console.
+        </p>
+      </div>
+
+      <div class="mt-10 mb-10 lg:w-2/5 lg:ml-40 lg:mb-0 lg:mt-0 lg:mr-20">
+        <img
+          src="./images/card_img_02.svg"
+          alt=""
+          sizes=""
+          srcset=""
+          class="w-3/5 m-auto transition-all duration-500 ease-in cursor-pointer hover:scale-110"
+        />
+      </div>
+    </section>
+
+    <!-- Card Section-3 -->
+    <section class="mt-10 lg:flex justify-around p-5 lg:p-10">
+      <div class="mb-10 lg:w-2/5 lg:ml-40 lg:mb-0 text-center">
+        <img
+          src="./images/card_img_03.svg"
+          alt=""
+          sizes=""
+          srcset=""
+          class="w-3/5 m-auto transition-all duration-500 ease-in cursor-pointer hover:scale-110"
+        />
+      </div>
+      <div class="mb-20 lg:w-3/5 lg:ml-20">
+        <h1 class="text-xl font-light lg:text-3xl lg:pb-10 text-left">
+          Git commands built-in.
+        </h1>
+        <p
+          class="text-base leading-8 mt-10 lg:mt-0 lg:text-lg lg:leading-10 lg:mr-60"
+        >
+          Working with Git and other SCM providers has never been easier. Review
+          diffs, stage files, and make commits right from the editor. Push and
+          pull from any hosted SCM service.
+        </p>
+      </div>
+    </section>
+
+    <!-- Card Section-4 -->
+    <section class="bg-[#F5F5F5] lg:flex justify-around p-5 lg:p-10">
+      <div class="lg:w-3/5 lg:ml-20">
+        <h1 class="text-xl font-light lg:text-3xl lg:pb-10 text-left">
+          Extensible and customizable.
+        </h1>
+        <p
+          class="text-base leading-8 mt-10 lg:mt-0 lg:text-lg lg:leading-10 lg:mr-60"
+        >
+          Want even more features? Install extensions to add new languages,
+          themes, debuggers, and to connect to additional services. Extensions
+          run in separate processes, ensuring they won't slow down your editor.
+
+          <span class="text-[#1398FF] cursor-pointer hover:underline">
+            Learn more about extensions.</span
+          >
+        </p>
+      </div>
+
+      <div class="mt-10 mb-10 lg:w-2/5 lg:ml-20 lg:mb-0 lg:mt-0 lg:mr-20">
+        <img
+          src="./images/card_img_04.png"
+          alt=""
+          sizes=""
+          srcset=""
+          class="w-3/5 m-auto transition-all duration-500 ease-in cursor-pointer hover:scale-110"
+        />
+      </div>
+    </section>
+
+    <!-- Card Section-5 -->
+    <section class="mt-10 lg:flex justify-around p-5 lg:p-10">
+      <div class="mb-10 lg:w-2/5 lg:ml-40 lg:mb-0 text-center">
+        <img
+          src="./images/card_img_05.svg"
+          alt=""
+          sizes=""
+          srcset=""
+          class="w-3/5 m-auto transition-all duration-500 ease-in cursor-pointer hover:scale-110"
+        />
+      </div>
+      <div class="mb-20 lg:w-3/5 lg:ml-20">
+        <h1 class="text-xl font-light lg:text-3xl lg:pb-10 text-left">
+          Deploy with confidence and ease
+        </h1>
+        <p
+          class="text-base leading-8 mt-10 lg:mt-0 lg:text-lg lg:leading-10 lg:mr-60"
+        >
+          With
+          <span class="text-[#1398FF] cursor-pointer hover:underline"
+            >Microsoft Azure</span
+          >
+          you can deploy and host your React, Angular, Vue, Node, Python (and
+          more!) sites, store and query relational and document based data, and
+          scale with serverless computing, all with ease,
+          <span class="text-[#1398FF] cursor-pointer hover:underline"
+            >all from within VS Code.</span
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- VS Code Section -->
+    <section class="bg-[#F5F5F5] text-center">
+      <h1 class="text-3xl lg:text-5xl font-light pt-16 pb-16">VS Code For</h1>
+      <div class="flex justify-around lg:block mx-auto px-4">
+        <div
+          class="flex flex-col lg:flex-row lg:justify-evenly lg:ml-60 lg:mr-64"
+        >
+          <div>
+            <i
+              class="fa-brands fa-js text-3xl ml-1 lg:text-4xl text-yellow-800"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">JavaScript</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-brands fa-python text-3xl -ml-5 lg:-ml-0 lg:text-4xl text-[#519ABA]"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">Python</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-brands fa-java text-3xl -ml-10 lg:-ml-0 lg:text-4xl text-[#CC3E44]"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">Java</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-brands fa-markdown text-3xl -ml-6 lg:-ml-0 lg:text-4xl text-[#519ABA]"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">Mark</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-solid fa-c text-3xl -ml-6 lg:-ml-0 lg:text-4xl text-[#A3C7D7]"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">C/C++</p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col mt-[-3px] lg:flex-row lg:justify-evenly lg:ml-64 lg:mr-64 lg:mt-10"
+        >
+          <div>
+            <i
+              class="fa-brands fa-js text-3xl lg:text-4xl text-yellow-800 ml-2"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">JavaScript</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-solid fa-arrow-right text-3xl -ml-4 lg:text-4xl text-[#519ABA] lg:ml-2"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">P. Shell</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-solid fa-code text-3xl -ml-5 lg:text-4xl lg:ml-0 text-[#CC3E44]"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">HTML</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-solid fa-laptop-code text-3xl lg:text-4xl text-[#519ABA]"
+            ></i>
+            <p class="inline lg:pl-3 text-xl">C# Lang</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-brands fa-php text-3xl -ml-8 lg:text-4xl lg:ml-0 text-[#A3C7D7]"
+            ></i>
+            <p class="inline lg:spl-3 text-xl">PHP</p>
+          </div>
+        </div>
+      </div>
+
+      <p
+        class="text-[#1398FF] cursor-pointer text-xl m-8 lg:m-8 hover:underline"
+      >
+        and many more languages on the Marketplace...
+      </p>
+
+      <button
+        class="bg-[#005BA4] text-white m-10 py-3 px-10 text-lg lg:py-5 lg:px-14 lg:text-2xl hover:bg-[#003980] transition-all duration-500 hover:scale-110"
+      >
+        Get Started Now
+      </button>
+    </section>
+
+    <!-- Download Section -->
+    <!-- <section class="flex justify-around mt-20">
+      <div>
+        <i class="fa-brands fa-windows text-9xl text-[#2D74D7]"></i>
+        <br />
+        <button
+          class="bg-[#005BA4] text-white py-2 px-14 text-xl lg:-ml-14 lg:mt-5"
+        >
+          <i class="fa-solid fa-down-long mr-1"></i>
+          Windows
+          <p class="text-sm mt-2">windows 8, 10, 11</p>
+        </button>
+        <div class="lg:-ml-14 lg:mt-4 text-lg">
+          <p>
+            User Installer
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >x64</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >x84</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Arm64</a
+            >
+          </p>
+
+          <p>
+            System Installer
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >x64</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >x84</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Arm64</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-brands fa-ubuntu text-9xl text-[#676767]"></i>
+        <br />
+
+        <button
+          class="bg-[#005BA4] text-white py-2 px-3 text-xl lg:-ml-14 lg:mt-5"
+        >
+          <i class="fa-solid fa-down-long mr-1"></i>
+          .deb
+          <p class="text-sm mt-2">Debian, Ubuntu</p>
+        </button>
+
+        <button class="bg-[#005BA4] text-white py-2 px-1 text-xl lg:mt-5">
+          <i class="fa-solid fa-down-long mr-1"></i>
+          .rpm
+          <p class="text-sm mt-2">Red Hat, Fedora, SUSE</p>
+        </button>
+
+        <div class="lg:-ml-14 lg:mt-4 text-lg">
+          <p>
+            .deb
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >x64</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Arm84</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Arm64</a
+            >
+          </p>
+
+          <p>
+            .rpm
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >x64</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Arm84</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Arm64</a
+            >
+          </p>
+
+          <p>
+            .tarz
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >x64</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Arm84</a
+            >
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Arm64</a
+            >
+          </p>
+
+          <p>
+            .nap
+            <a
+              href=""
+              class="bg-[#005BA4] text-base text-white py-0 px-0.5 rounded"
+              >Snap Store</a
+            >
+          </p>
+        </div>
+      </div>
+      <div>
+        <i class="fa-brands fa-apple"></i>
+        <button></button>
+        <div></div>
+      </div>
+    </section> -->
+
+    <section class="bg-white flex justify-center">
+      <section
+        class="flex flex-wrap justify-center items-start gap-3 my-12 w-full lg:w-3/4"
+      >
+        <section class="flex flex-col items-center gap-5 px-10 py-3">
+          <div>
+            <i class="fa-brands fa-windows text-9xl text-[#2D74D7]"></i>
+          </div>
+
+          <button
+            class="hover:shadow-2xl w-full bg-blue-600 hover:bg-blue-700 text-white rounded-sm text-lg font-semibold py-3"
+          >
+            <i class="fa-solid fa-download"></i>
+            Windows <br />
+            <p class="text-xs mt-1">Windows 8, 10, 11</p>
+          </button>
+
+          <div class="flex flex-col gap-1">
+            <div class="flex gap-1">
+              <div class="basis-3/4 text-center px-2">
+                <p class="font-semibold text-base">User Installer</p>
+              </div>
+
+              <div class="flex gap-[3px] items-center">
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x64</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x86</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm64</a
+                >
+              </div>
+            </div>
+
+            <div class="flex gap-1">
+              <div class="basis-3/4 text-center px-2">
+                <p class="text-zinc-800 font-semibold text-base">
+                  System Installer
+                </p>
+              </div>
+
+              <div class="flex gap-[3px] items-center">
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x64</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x86</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm64</a
+                >
+              </div>
+            </div>
+
+            <div class="flex gap-1">
+              <div class="basis-3/4 text-center px-2">
+                <p class="text-zinc-800 font-semibold text-base">.zip</p>
+              </div>
+
+              <div class="flex gap-[3px] items-center">
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x64</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x86</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm64</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="flex flex-col items-center gap-5 px-10 py-3">
+          <div>
+            <i class="fa-brands fa-ubuntu text-9xl text-[#676767]"></i>
+          </div>
+          <div class="flex gap-1 flex-row w-[120%]">
+            <button
+              class="hover:shadow-2xl w-1/2 bg-blue-600 hover:bg-blue-700 text-white rounded-sm text-lg font-semibold py-3"
+            >
+              <i class="fa-solid fa-download"></i>
+              .deb<br />
+              <p class="text-xs mt-1 px-1">Debian, Ubuntu</p>
+            </button>
+            <button
+              class="hover:shadow-2xl w-1/2 bg-blue-600 hover:bg-blue-700 text-white rounded-sm text-lg font-semibold py-3"
+            >
+              <i class="fa-solid fa-download"></i>
+              .rpm<br />
+              <p class="text-xs mt-1 px-1">Red Hat, Fedora, SUSE</p>
+            </button>
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between gap-1">
+              <div class="text-center px-2">
+                <p class="text-zinc-800 font-semibold text-base">.deb</p>
+              </div>
+
+              <div class="flex gap-[3px] items-center justify-start">
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x64</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm32</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm64</a
+                >
+              </div>
+            </div>
+
+            <div class="flex justify-between gap-1">
+              <div class="text-center px-2">
+                <p class="text-zinc-800 font-semibold text-base">.rpm</p>
+              </div>
+
+              <div class="flex gap-[3px] items-center justify-start">
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x64</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm32</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm64</a
+                >
+              </div>
+            </div>
+
+            <div class="flex justify-between gap-1">
+              <div class="text-center px-2">
+                <p class="text-zinc-800 font-semibold text-base">.tar.gz</p>
+              </div>
+
+              <div class="flex gap-[3px] items-center justify-start">
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >x64</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm32</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Arm64</a
+                >
+              </div>
+            </div>
+
+            <div class="flex justify-start gap-3">
+              <div class="text-center px-2">
+                <p class="text-zinc-800 font-semibold text-base">Snap</p>
+              </div>
+
+              <div class="flex gap-[3px] items-center">
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Snap Store.</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="flex flex-col items-center gap-5 px-10 py-3">
+          <div>
+            <i class="fa-brands fa-apple text-9xl text-[#000000]"></i>
+          </div>
+
+          <div class="flex gap-1 flex-row w-full">
+            <button
+              class="hover:shadow-2xl w-full bg-blue-600 hover:bg-blue-700 text-white rounded-sm text-lg font-semibold py-3"
+            >
+              <i class="fa-solid fa-download"></i>
+              Mac<br />
+              <p class="text-xs mt-1 px-1">macOS 10.11+</p>
+            </button>
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between gap-1">
+              <div class="text-center px-2">
+                <p class="text-zinc-800 font-semibold text-base">.zip</p>
+              </div>
+
+              <div class="flex gap-[3px] items-center justify-start">
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Universal</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Intel Chip</a
+                >
+                <a
+                  href=""
+                  class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold p-1 rounded-sm"
+                  >Apple silicon</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- Ending Section -->
+    <section class="bg-[#F5F5F5] flex justify-center">
+      <section
+        class="flex flex-col justify-center items-center gap-1 my-4 w-full lg:w-3/4"
+      >
+        <div
+          class="flex flex-col lg:flex-row flex-wrap items-center justify-around w-full"
+        >
+          <div class="flex flex-col gap-1 items-center justify-center p-10">
+            <p class="text-center text-xl font-semibold text-[#44444F]">
+              Want new features sooner?
+            </p>
+            <p
+              class="text-center text-base lg:text-lg p-2 font-normal text-[#44446C]"
+            >
+              Get the
+              <a
+                class="text-blue-600 hover:underline hover:text-blue-700"
+                href=""
+                >Insiders build</a
+              >
+              instead.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-1 items-center justify-center p-10">
+            <p class="text-center text-xl font-semibold text-[#44444F]">
+              Use
+              <a
+                class="text-blue-600 hover:underline hover:text-blue-700"
+                href=""
+                >vscode.dev</a
+              >
+              for quick edits online
+            </p>
+            <p
+              class="text-center text-base lg:text-lg p-1 font-normal text-zinc-600"
+            >
+              GitHub, Azure Repos, and local files.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2 items-center justify-center p-10">
+          <p class="text-xs lg:text-sm font-normal text-zinc-500">
+            LICENSE AND PRIVACY TERMS
+          </p>
+          <p
+            class="text-xs lg:text-xs font-normal text-zinc-500 w-[60%] lg:leading-9 text-center"
+          >
+            By downloading and using Visual Studio Code, you agree to the
+            <a class="text-blue-600 hover:underline hover:text-blue-700" href=""
+              >license terms</a
+            >
+            and
+            <a class="text-blue-600 hover:underline hover:text-blue-700" href=""
+              >privacy statement</a
+            >. VS Code automatically sends telemetry data and crash dumps to
+            help us improve the product. If you would prefer not to have this
+            data sent please go see
+            <a class="text-blue-600 hover:underline hover:text-blue-700" href=""
+              >How to Disable Crash Reporting</a
+            >
+            to learn how to disable it.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!--  Footer  -->
+    <footer class="bg-[#2C2C32] flex flex-col justify-center items-center">
+      <section
+        class="flex flex-col gap-3 lg:gap-0 items-center justify-around lg:flex-row w-full lg:w-3/4 py-7"
+      >
+        <div class="flex items-center justify-center gap-8 text-sm basis-1/2">
+          <p class="text-white font-normal">Hello from Seattle</p>
+          <p
+            class="text-white hover:text-blue-500 font-semibold hover:underline cursor-pointer"
+          >
+            <a href="">Follow@Code</a>
+          </p>
+
+          <p class="group">
+            <a
+              class="flex gap-1 items-center justify-center text-[#2C2C32] font-semibold bg-slate-200 hover:bg-white rounded px-2 py-1"
+              href=""
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>Star</a
+            >
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center gap-2 basis-1/2"
+        >
+          <div
+            class="text-white text-xs flex justify-between items-center gap-6"
+          >
+            <a
+              class="hover:text-purple-400 hover:underline"
+              href=""
+              target="_blank"
+              >Support</a
+            >
+            <a
+              class="hover:text-purple-400 hover:underline"
+              href=""
+              target="_blank"
+              >Privacy</a
+            >
+            <a
+              class="hover:text-purple-400 hover:underline"
+              href=""
+              target="_blank"
+              >Terms of Use</a
+            >
+            <a
+              class="hover:text-purple-400 hover:underline"
+              href=""
+              target="_blank"
+              >License</a
+            >
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
