@@ -78,8 +78,9 @@ p.text-gray.top-Para {
 /* Front Image */
 .frontCards {
   position: absolute;
+  width: 800px;
   top: 130px;
-  right: -150px;
+  right: -50px;
 }
 
 .pink-button {
@@ -195,4 +196,158 @@ div.card.cardTop {
 
 .lowSection > img {
   transform: rotate(90deg);
+}
+
+/* Customer Section */
+.TopSection {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.customerPara {
+  margin-top: 80px;
+  margin-right: 300px;
+  margin-left: 300px;
+  margin-bottom: 100px;
+  color: #cdcdcd;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+/* Cards */
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.customerCard {
+  color: #ffffff;
+  margin: 40px;
+  padding: 20px;
+  width: 500px;
+  border: 1px solid #ffffff;
+}
+
+.customerCard {
+  background-color: #1e1f24;
+}
+
+.customerCard.bgcolor {
+  background-color: #4e4c4b;
+}
+
+.customerCard > img {
+  margin-bottom: 30px;
+}
+
+.customerCard > h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.button-section {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.wide {
+  background-color: rgb(214 58 164);
+  height: 15px;
+  width: 80px;
+  border-radius: 20px;
+  border: none;
+}
+
+.circle {
+  background-color: #3a3a3a;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+cite {
+  color: #b5b5b4;
+  padding-top: 30px;
+}
+
+/* Get Started */
+.pinkBg {
+  margin-top: 200px;
+  padding-bottom: 300px;
+}
+
+.backgroundImages {
+  text-align: center;
+}
+.img1,
+.img2 {
+  width: 100%;
+}
+
+.img2 {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+/* Diamond */
+
+.diamondLeft {
+  position: absolute;
+  left: -30px;
+  top: 5300px;
+  z-index: 3;
+}
+.diamondRight {
+  position: absolute;
+  right: -80px;
+  top: 5300px;
+  z-index: 4;
+}
+
+/* TEXT */
+.text-center {
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Whitehere {
+  color: #ffffff;
+  font-size: 80px;
+  margin-top: -400px;
+  font-weight: 900;
+}
+
+.textBlack {
+  color: #000000;
+}
+
+.pink-button-image2 {
+  width: 80px;
+  position: absolute;
+  left: 550px;
+  top: 240px;
+  z-index: -1;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -200px;
+  margin-bottom: 100px;
+}
+
+.footerItems {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: #ffffff;
+  margin-left: -150px;
 }
