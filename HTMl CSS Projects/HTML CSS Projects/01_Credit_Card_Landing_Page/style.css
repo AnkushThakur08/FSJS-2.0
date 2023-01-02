@@ -5,6 +5,7 @@
 body {
   background-color: #151515;
   font-family: 'Montserrat';
+  overflow-x: hidden;
 }
 
 /* NAV */
@@ -17,6 +18,11 @@ body {
 
 .logo {
   margin-left: -30px;
+  cursor: pointer;
+  transition: all 600ms ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.2);
 }
 
 .nav-links {
@@ -30,14 +36,49 @@ li {
   margin-top: 15px;
   font-size: 1rem;
   font-weight: 700;
+  transition: all 500ms ease-in-out;
 }
 
-button {
+li:hover {
+  color: #808080;
+  transform: scale(1.2);
+}
+
+button,
+.contact {
   background: none;
   border: none;
   color: #cdcdcd;
+  font-weight: 700;
   margin: 15px;
   font-size: 1rem;
+}
+
+.btn-pink {
+  position: absolute;
+  top: 32px;
+  right: 205px;
+}
+
+.engButton {
+  margin-right: 40px;
+  transition: all 400ms ease-in;
+  cursor: pointer;
+}
+
+.engButton:hover {
+  color: #808080;
+  transform: scale(1.2);
+}
+
+.contact {
+  transition: all 400ms ease-in;
+  cursor: pointer;
+}
+
+.contact:hover {
+  color: #808080;
+  transform: scale(1.2);
 }
 
 /* HERO SECTION */
@@ -65,7 +106,7 @@ h1.text-white.large-Heading {
   line-height: 35px;
 }
 p.text-gray.top-Para {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 /* Back Image */
@@ -84,7 +125,7 @@ p.text-gray.top-Para {
 }
 
 .pink-button {
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 25px;
   text-transform: uppercase;
   margin-left: 140px;
@@ -95,23 +136,41 @@ p.text-gray.top-Para {
   width: 80px;
   position: absolute;
   left: 90px;
-  top: 490px;
+  top: 550px;
   z-index: -1;
 }
 
-.flex2 {
+/* Below Button */
+.belowButton {
   display: flex;
-  margin-top: 80px;
+  margin-left: 90px;
+  margin-top: 200px;
+  margin-bottom: 150px;
+  color: #ffffff;
+  font-size: 30px;
+}
+.userSection {
+  display: flex;
 }
 
-h1.text-white.large-text {
-  font-size: 80px;
+.experienceSection {
+  display: flex;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.belowButton > img {
+  margin: 0px 50px;
 }
 
 /*LogoBar  */
 .logoBar {
   background-color: #292929;
-  margin-top: 400px;
   display: flex;
   justify-content: space-around;
 }
@@ -161,6 +220,13 @@ h1.text-white.large-text {
   padding: 60px;
   color: #ffffff;
   background-color: #272727;
+  transition: all 700ms ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 7px 10px #808080;
+  border: none;
 }
 div.card.cardTop {
   margin-top: -60px;
@@ -228,6 +294,12 @@ div.card.cardTop {
   padding: 20px;
   width: 500px;
   border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.customerCard:hover {
+  transform: scale(1.2);
+  /* box-shadow: 0px 7px 10px #808080; */
 }
 
 .customerCard {
@@ -259,6 +331,10 @@ div.card.cardTop {
   width: 80px;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
+}
+.wide:hover {
+  transform: scale(1.2);
 }
 
 .circle {
@@ -267,7 +343,14 @@ div.card.cardTop {
   width: 18px;
   border-radius: 50%;
   margin: 0 6px;
+  cursor: pointer;
 }
+
+.circle:hover {
+  background-color: rgb(214 58 164);
+  transform: scale(1.2);
+}
+
 cite {
   color: #b5b5b4;
   padding-top: 30px;
@@ -298,13 +381,13 @@ cite {
 .diamondLeft {
   position: absolute;
   left: -30px;
-  top: 5300px;
+  top: 5380px;
   z-index: 3;
 }
 .diamondRight {
   position: absolute;
-  right: -80px;
-  top: 5300px;
+  right: 0px;
+  top: 5380px;
   z-index: 4;
 }
 
@@ -332,7 +415,7 @@ cite {
   width: 80px;
   position: absolute;
   left: 550px;
-  top: 240px;
+  top: 270px;
   z-index: -1;
 }
 
@@ -342,6 +425,11 @@ footer {
   justify-content: space-around;
   margin-left: -200px;
   margin-bottom: 100px;
+  cursor: pointer;
+}
+footer > img {
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
 }
 
 .footerItems {
@@ -350,4 +438,8 @@ footer {
   list-style-type: none;
   color: #ffffff;
   margin-left: -150px;
+}
+
+footer > img:hover {
+  transform: scale(1.2);
 }
