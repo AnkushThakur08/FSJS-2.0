@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Hosting Landing Page</title>
   </head>
-  <body style="background-color: aqua">
+  <body>
     <!-- NavBar -->
-    <nav>
+    <nav class="flex">
       <div class="logo">
         <img src="./assets/Logo.svg" alt="" srcset="" />
       </div>
@@ -22,25 +29,25 @@
       </ul>
 
       <div class="nav-button">
-        <button class="blue-Button">Login</button>
+        <button class="blue-Button navButton">Login</button>
       </div>
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="flex header">
       <div class="left-side">
-        <h1 class="text-white">
-          The Best and <span class="blueText">cheapest</span> hosting for your
-          website
+        <h1 class="text-white heading">
+          The best and <span class="text-blue italic">cheapest</span> hosting
+          for your website
         </h1>
 
-        <p class="text-grey">
+        <p class="headerpara text-grey">
           Hosting your website here is easy, access is fast, server security is
           very well maintained, and of course supported by reliable servers
         </p>
 
-        <button>Get Started</button>
-        <button>Try Start Free</button>
+        <button class="blue-button getStarted">Get Started</button>
+        <button class="transparent-button">Try Start Free</button>
       </div>
       <div class="right-side">
         <img src="./assets/Illustrations/Group 238502.svg" alt="" srcset="" />
@@ -48,7 +55,7 @@
     </header>
 
     <!-- Logo bar -->
-    <section>
+    <section class="logoBar flex">
       <img src="./assets/Logo-light.svg" alt="" srcset="" />
       <img src="./assets/Logo-light.svg" alt="" srcset="" />
       <img src="./assets/Logo-light.svg" alt="" srcset="" />
@@ -58,17 +65,18 @@
     <!-- White Section -->
     <section class="bg-white">
       <div class="top-section">
-        <h1 class="text-black">The best service especially for you</h1>
-        <p class="text-grey">
-          We will serve you as best we can with the aim of providing
-          satisfaction to you
+        <h1 class="text-black heading">The best service especially for you</h1>
+        <p class="text-grey paragraph">
+          We will serve you as best we can with the aim of
+          <br />
+          providing satisfaction to you
         </p>
       </div>
 
       <div class="lower-section">
         <div class="card">
           <img src="./assets/Icons/fast.svg" alt="fast" srcset="" />
-          <h1 class="tetx-black">Faster hosting process</h1>
+          <h1 class="text-black">Faster hosting process</h1>
           <p class="text-grey">
             We can speed up the creation of your website, which is made directly
             by the experts
@@ -77,14 +85,14 @@
 
         <div class="card bg-black">
           <img src="./assets/Icons/signal.svg" alt="signal" srcset="" />
-          <h1 class="tetx-black">Speed to access faster</h1>
+          <h1 class="text-white">Speed to access faster</h1>
           <p class="text-grey">
             Excellent network infrastructure and hardware to support fast and
             stable access
           </p>
         </div>
 
-        <div class="card bg-black">
+        <div class="card">
           <img src="./assets/Icons/heart.svg" alt="heart" srcset="" />
           <h1 class="tetx-black">Faster Service 24/7</h1>
           <p class="text-grey">
@@ -98,41 +106,72 @@
     <!-- White Section -->
     <section class="bg-white">
       <div class="top-section">
-        <h1 class="text-black">
+        <h1 class="text-black belowCardheading">
           We are ready to support your business needs to be more advanced
         </h1>
       </div>
 
-      <div class="lower-section">
+      <div class="lower-section flex">
         <!-- Left Side -->
-        <div class="left-side">
-          <button class="bg-blue text-white">
+        <div class="button-flex">
+          <button class="bigButton blue">
             Our main features
             <img
+              class="float-right"
               src="./assets/Icons/Group 238511.svg"
               alt="minus sign"
               srcset=""
             />
           </button>
 
-          <button class="text-black">
+          <button class="text-black bigButton">
             Speed optimization
-            <img src="./assets/Icons/Group 238512.svg" alt="+ sign" srcset="" />
+            <img
+              class="float-right"
+              src="./assets/Icons/Group 238512.svg"
+              alt="+ sign"
+              srcset=""
+            />
           </button>
 
-          <button class="text-black">
+          <button class="text-black bigButton">
             Downtime and security optimization
-            <img src="./assets/Icons/Group 238512.svg" alt="+ sign" srcset="" />
+            <img
+              class="float-right"
+              src="./assets/Icons/Group 238512.svg"
+              alt="+ sign"
+              srcset=""
+            />
           </button>
 
-          <button class="text-black">
+          <button class="text-black bigButton">
             Additional features
-            <img src="./assets/Icons/Group 238512.svg" alt="+ sign" srcset="" />
+            <img
+              class="float-right"
+              src="./assets/Icons/Group 238512.svg"
+              alt="+ sign"
+              srcset=""
+            />
           </button>
 
-          <button class="text-black">
+          <button class="text-black bigButton">
+            Speed optimization
+            <img
+              class="float-right"
+              src="./assets/Icons/Group 238512.svg"
+              alt="+ sign"
+              srcset=""
+            />
+          </button>
+
+          <button class="text-black bigButton">
             Best technical support services
-            <img src="./assets/Icons/Group 238512.svg" alt="+ sign" srcset="" />
+            <img
+              class="float-right"
+              src="./assets/Icons/Group 238512.svg"
+              alt="+ sign"
+              srcset=""
+            />
           </button>
         </div>
 
@@ -152,11 +191,107 @@
 
     <!-- Plan Section -->
     <section class="bg-black">
-      <img src="./assets/Icons/arrow-left.svg" alt="arrow-left" srcset="" />
-      <h1 class="text-white">
-        Hosting your website with the services we provide
-      </h1>
-      <img src="./assets/Icons/arrow-right.svg" alt="arrow-right" srcset="" />
+      <div class="ImageSection">
+        <img src="./assets/Icons/arrow-left.svg" alt="arrow-left" srcset="" />
+        <h1 class="text-white">
+          Hosting your website with the
+          <br />
+          services we provide
+        </h1>
+        <img src="./assets/Icons/arrow-right.svg" alt="arrow-right" srcset="" />
+      </div>
+
+      <div class="PlanCard">
+        <!-- Plan-1 -->
+        <div class="plan">
+          <h1 class="text-black planHeading">Regular</h1>
+          <h1 class="text-black planPrice">
+            $8,9 <sub class="text-grey small-text">/month</sub>
+          </h1>
+          <p class="text-black paragraph">
+            Suitable for you who will build a website and others
+          </p>
+          <hr class="line" />
+
+          <div class="points">
+            <h1 class="text-black icon">Up to 16,000 Visitors/Month</h1>
+
+            <h1 class="text-black icon">500MB SSD Disk Space</h1>
+
+            <h1 class="text-black icon">Unlimited Bandwidth</h1>
+
+            <h1 class="text-black icon">Unlimited Databases</h1>
+
+            <h1 class="text-black icon">Instant Backup</h1>
+
+            <h1 class="text-black icon">1 Email Account</h1>
+
+            <h1 class="text-black icon">1 Domain</h1>
+          </div>
+
+          <button class="blue-Button">Select</button>
+        </div>
+
+        <!-- Plan-2 -->
+        <div class="plan bg-blue">
+          <h1 class="planHeading">Standard</h1>
+          <h1 class="planPrice">$12,98 <sub class="small-text">/month</sub></h1>
+          <p class="paragraph">
+            Suitable for business, such as a website or management system for
+            complaints
+          </p>
+          <hr class="whiteline" />
+
+          <div class="points"></div>
+
+          <h1 class="icon2">Up to 36,000 Visitors/Month</h1>
+
+          <h1 class="icon2">Unlimited SSD Disk Space</h1>
+
+          <h1 class="icon2">Unlimited Bandwidth</h1>
+
+          <h1 class="icon2">Unlimited Databases</h1>
+
+          <h1 class="icon2">Instant Backup</h1>
+
+          <h1 class="icon2">Unlimited Account</h1>
+
+          <h1 class="icon2">Unlimited Addon Domain</h1>
+
+          <button class="bg-white text-blue">Select</button>
+        </div>
+
+        <!-- Plan-3 -->
+        <div class="plan">
+          <h1 class="text-black planHeading">Premium</h1>
+          <h1 class="text-black planPrice">
+            $19,9 <sub class="text-grey small-text">/month</sub>
+          </h1>
+          <p class="text-black paragraph">
+            Suitable for those of you who need special physical server
+            performance and security
+          </p>
+          <hr class="line" />
+
+          <div class="points">
+            <h1 class="text-black icon">Up to 200,000 Visitors/Month</h1>
+
+            <h1 class="text-black icon">500MB SSD Disk Space</h1>
+
+            <h1 class="text-black icon">Unlimited Bandwidth</h1>
+
+            <h1 class="text-black icon">Unlimited Databases</h1>
+
+            <h1 class="text-black icon">Instant Backup</h1>
+
+            <h1 class="text-black icon">Unlimited Account</h1>
+
+            <h1 class="text-black icon">Free Domain</h1>
+          </div>
+
+          <button class="blue-Button">Select</button>
+        </div>
+      </div>
     </section>
   </body>
 </html>

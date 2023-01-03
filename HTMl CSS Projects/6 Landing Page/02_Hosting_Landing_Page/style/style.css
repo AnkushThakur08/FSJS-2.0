@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+/* repeated Classes */
+.blue-Button {
+  background-color: #0c8bfd;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-blue {
+  color: #0c8bfd;
+}
+
+.text-grey {
+  color: #777676;
+}
+
+.blue-button {
+  background-color: #0c8bfd;
+  color: #ffffff;
+}
+.text-black {
+  color: #111010;
+}
+.text-white {
+  color: #ffffff;
+}
+.bg-black {
+  background-color: #111010;
+}
+
+/* NAV */
+nav,
+header {
+  background-color: #111010;
+  padding-top: 30px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: #908f8f;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding-right: 40px;
+}
+
+.navButton {
+  padding: 10px 35px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+/* Header */
+
+.header {
+  padding: 100px;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-white.heading {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-grey.headerpara {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.blue-button.getStarted {
+  margin-top: 80px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.transparent-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+/* LogoBar */
+.logoBar {
+  background-color: #1d1c1c;
+  padding: 40px;
+}
+
+/* White Section */
+.bg-white {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.top-section {
+  text-align: center;
+}
+.text-black.heading {
+  font-size: 55px;
+  font-weight: 500;
+}
+.text-grey.paragraph {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* CARD */
+.lower-section {
+  display: flex;
+  margin-left: 120px;
+  margin-top: 100px;
+}
+.card {
+  padding: 30px;
+  padding-bottom: 60px;
+  border: 3px solid #cdcdcd;
+  border-radius: 30px;
+  margin: 30px;
+  width: 300px;
+  text-align: center;
+}
+.card > h1 {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.card > p {
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+.card.bg-black {
+  background-color: #111010;
+  border: none;
+  margin-top: -40px;
+  margin-bottom: 60px;
+  box-shadow: 0px 7px 10px #111010;
+}
+
+/* White Section */
+.text-black.belowCardheading {
+  text-align: left;
+  margin-left: 140px;
+  margin-right: 450px;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+/* LEFT SIDE */
+.button-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.blue-Button.bigButton.blue {
+  border: none;
+}
+
+.bigButton {
+  text-align: left;
+  padding: 20px 20px;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 2px solid #aeadad;
+  background-color: transparent;
+  color: #2c2b2b;
+}
+.bigButton.blue {
+  background-color: #0c8bfd;
+  color: #ffffff;
+  border: none;
+}
+
+.float-right {
+  float: right;
+  padding-left: 1rem;
+}
+
+/* RIGHT SIDE */
+.right-side.bg-black {
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.bg-gray.text-white::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  background-color: #d9d9d9;
+  margin-right: 20px;
+}
+
+.bg-gray.text-white {
+  background-color: #292828;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+/* PLAN Section */
+/* Image Section */
+.ImageSection {
+  padding-top: 150px;
+  display: flex;
+  margin-left: 150px;
+}
+
+.ImageSection > img {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.ImageSection > h1 {
+  font-size: 50px;
+  margin-top: -50px;
+  font-weight: 500;
+  margin-left: 30px;
+  text-align: center;
+}
+
+/* PLAN CARDS */
+.PlanCard {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px;
+}
+
+.plan {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 40px;
+  width: 450px;
+}
+
+.planHeading {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.planPrice {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.small-text {
+  font-size: 28px;
+  margin-left: -10px;
+}
+
+.paragraph {
+  font-weight: 500;
+  margin: 10px;
+  font-size: 17px;
+}
+
+.line {
+  background-color: #e9e9e9;
+  margin: 25px 0px;
+}
+
+.whiteline {
+  background-color: #ffffff;
+  margin: 25px 0px;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.icon2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.icon::before {
+  content: url('../assets/Icons/blue-tick.svg');
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.bg-blue {
+  background-color: #0c8bfd;
+  color: #ffffff;
+}
+
+.icon2::before {
+  content: url('../assets/Icons/white-tick.svg');
+  display: inline-block;
+  margin-right: 10px;
+}
