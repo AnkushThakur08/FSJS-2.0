@@ -257,6 +257,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 100px;
+  padding-bottom: 100px;
 }
 
 .plan {
@@ -332,4 +333,58 @@ header {
   content: url('../assets/Icons/white-tick.svg');
   display: inline-block;
   margin-right: 10px;
+}
+
+.planButton {
+  text-align: center;
+  padding: 10px 120px;
+  font-weight: 400;
+  font-size: 25px;
+  border-radius: 40px;
+  border: none;
+  margin-top: 55px;
+}
+
+.planButton2 {
+  background-color: #ffffff;
+  color: #158ffd;
+  text-align: center;
+  padding: 10px 120px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 40px;
+  border: none;
+  margin-top: 30px;
+}
+
+.planButton3 {
+  text-align: center;
+  padding: 10px 120px;
+  font-weight: 400;
+  font-size: 25px;
+  border-radius: 40px;
+  border: none;
+  margin-top: 30px;
+}
+
+/* Customer Section */
+
+.flex.customer {
+  align-items: center;
+}
+
+.customerheading {
+  font-size: 40px;
+  margin-left: 80px;
+  flex-grow: 2;
+}
+
+.customerheading > h1 {
+  font-weight: 500;
+}
+
+.customerpara {
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
