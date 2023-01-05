@@ -388,3 +388,115 @@ header {
   margin-left: 100px;
   margin-right: 100px;
 }
+
+/* Reviews */
+.reviewSection {
+  margin-left: 20px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.review {
+  border-radius: 25px;
+  padding: 30px;
+  margin: 20px;
+}
+
+.review-1 {
+  background-color: #111010;
+}
+
+.review-2 {
+  border: 2px solid #e0dfdf;
+}
+figcaption {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+cite {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.customerPara {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.stars {
+  margin-top: 50px;
+}
+
+/* Last Section */
+
+.lastSection {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.Lastheading {
+  margin: 80px;
+}
+
+.text-white.singup {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.contactForm {
+  background-color: #292828;
+  margin: 120px;
+  border-radius: 25px;
+  padding: 40px;
+}
+
+.contactForm > input {
+  background-color: #3e3d3d;
+  font-size: 20px;
+  padding: 15px 25px;
+  border-radius: 40px;
+  border: none;
+}
+
+.blue-Button.signup {
+  padding: 20px 50px;
+  border-radius: 40px;
+  font-size: 20px;
+  border: none;
+}
+
+.white-line {
+  margin: 0px 120px;
+  background-color: #3f3e3e;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+.row > h2 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.row > h1 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.logo-section > img {
+  margin-left: 120px;
+
+  margin-top: 50px;
+}
