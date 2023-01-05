@@ -44,6 +44,15 @@ header {
   padding-top: 30px;
 }
 
+.logo > img {
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+
+.logo > img:hover {
+  transform: scale(1.2);
+}
+
 .nav-items {
   display: flex;
   flex-direction: row;
@@ -55,6 +64,12 @@ header {
 
 .nav-item {
   padding-right: 40px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.nav-item:hover {
+  transform: scale(1.2);
+  color: #ffffff;
 }
 
 .navButton {
@@ -62,6 +77,14 @@ header {
   font-size: 17px;
   font-weight: 500;
   border-radius: 30px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.navButton:hover {
+  transform: scale(1.2);
+  background-color: #ffffff;
+  color: #0c8bfd;
 }
 
 /* Header */
@@ -94,6 +117,14 @@ header {
   font-size: 20px;
   font-weight: 500;
   border-radius: 30px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.blue-button.getStarted:hover {
+  transform: scale(1.2);
+  background-color: #ffffff;
+  color: #0c8bfd;
 }
 
 .transparent-button {
@@ -106,12 +137,38 @@ header {
   font-size: 20px;
   font-weight: 500;
   border-radius: 30px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.transparent-button:hover {
+  transform: scale(1.2);
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* LogoBar */
 .logoBar {
   background-color: #1d1c1c;
   padding: 40px;
+}
+
+.logoBar > img {
+  cursor: pointer;
+}
+
+.logoBar > img:hover {
+  animation: shake 400ms;
+}
+
+@keyframes shake {
+  25% {
+    transform: rotate(15deg);
+  }
+
+  75% {
+    transform: rotate(-15deg);
+  }
 }
 
 /* White Section */
@@ -147,6 +204,13 @@ header {
   margin: 30px;
   width: 300px;
   text-align: center;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 7px 9px #cdcdcd;
 }
 .card > h1 {
   margin-top: 20px;
@@ -164,6 +228,11 @@ header {
   margin-top: -40px;
   margin-bottom: 60px;
   box-shadow: 0px 7px 10px #111010;
+}
+
+.card.bg-black:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 7px 9px #111010;
 }
 
 /* White Section */
@@ -195,11 +264,20 @@ header {
   border: 2px solid #aeadad;
   background-color: transparent;
   color: #2c2b2b;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.bigButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 7px 9px #aeadad;
 }
 .bigButton.blue {
   background-color: #0c8bfd;
   color: #ffffff;
   border: none;
+}
+.bigButton.blue:hover {
+  box-shadow: 0px 7px 9px #0c8bfd;
 }
 
 .float-right {
@@ -229,6 +307,12 @@ header {
   margin: 20px;
   padding: 20px;
   border-radius: 50px;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+.bg-gray.text-white:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 9px #d9d9d9;
 }
 
 /* PLAN Section */
@@ -242,6 +326,17 @@ header {
 .ImageSection > img {
   padding-left: 80px;
   padding-right: 80px;
+  animation: scroll 1s infinite linear;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-20px);
+  }
 }
 
 .ImageSection > h1 {
@@ -256,7 +351,7 @@ header {
 .PlanCard {
   display: flex;
   justify-content: space-around;
-  margin: 100px;
+  margin: 60px;
   padding-bottom: 100px;
 }
 
@@ -266,6 +361,11 @@ header {
   padding: 20px;
   margin: 40px;
   width: 450px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.plan:hover {
+  transform: scale(1.1);
 }
 
 .planHeading {
@@ -343,6 +443,8 @@ header {
   border-radius: 40px;
   border: none;
   margin-top: 55px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 .planButton2 {
@@ -355,6 +457,8 @@ header {
   border-radius: 40px;
   border: none;
   margin-top: 30px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 .planButton3 {
@@ -365,6 +469,8 @@ header {
   border-radius: 40px;
   border: none;
   margin-top: 30px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 /* Customer Section */
@@ -399,15 +505,29 @@ header {
 .review {
   border-radius: 25px;
   padding: 30px;
-  margin: 20px;
+  margin: 30px;
 }
 
 .review-1 {
   background-color: #111010;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.review-1:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 7px 9px #111010;
 }
 
 .review-2 {
   border: 2px solid #e0dfdf;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.review-2:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 7px 9px #111010;
 }
 figcaption {
   margin-top: 30px;
@@ -487,6 +607,11 @@ footer {
   font-weight: 300;
   font-size: 15px;
   margin: 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.row > h2:hover {
+  transform: scale(1.1);
 }
 
 .row > h1 {
@@ -497,6 +622,6 @@ footer {
 
 .logo-section > img {
   margin-left: 120px;
-
   margin-top: 50px;
+  margin-bottom: 50px;
 }
