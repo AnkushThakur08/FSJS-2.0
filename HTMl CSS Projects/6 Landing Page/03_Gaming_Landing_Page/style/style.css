@@ -1,3 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: aqua;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+.bg-image {
+  background-image: linear-gradient(
+      rgba(81, 83, 87, 0.999),
+      rgba(13, 13, 13, 0.999)
+    ),
+    url('../Assets/Photos/futuristic-bg.png');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: overlay;
+}
+
+/* Repeated Classes */
+.bg-transparent {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.bg-orange {
+  background-color: #f4694c;
+  color: #ffffff;
+}
+
+.big-button {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-grey {
+  color: #808080;
+}
+
+.text-black {
+  color: #121212;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+.nav-items {
+  color: #ffffff;
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: -100px;
+}
+
+.nav-item {
+  padding-right: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: -5px;
+}
+
+.nav-button {
+  padding: 10px 25px;
+  font-size: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+/* Left Section */
+
+.heading {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.headerpara {
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.headerButton {
+  margin-top: 50px;
+}
+.headerButton.white {
+  border: 1px solid #ffffff;
+  margin-left: 30px;
+}
+
+/* Right Section */
+.playButton {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.DashIcon + span {
+  font-size: 25px;
+}
+
+.arrow {
+  margin-left: 40px;
+}
+
+/* Game Section */
+.gameSection {
+  margin-top: 80px;
+  text-align: center;
+}
+.gameSection > h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* CARD */
+
+.game-cards {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  transition: transform 500ms ease;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card > img {
+  width: 300px;
+  height: 300px;
+  transition: filter 0.9s ease;
+}
+
+.card > img:hover {
+  cursor: pointer;
+  filter: sepia(0);
+  filter: saturate(2.2);
+}
+
+.bg-card1 {
+  margin-top: -50px;
+  background-color: #414546;
 }
