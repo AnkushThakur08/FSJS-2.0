@@ -126,7 +126,7 @@ header {
 
 /* Game Section */
 .gameSection {
-  margin-top: 80px;
+  margin: 150px 70px;
   text-align: center;
 }
 .gameSection > h1 {
@@ -147,22 +147,84 @@ header {
 }
 
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .card > img {
-  width: 300px;
-  height: 300px;
+  position: relative;
+  z-index: -1;
+  width: 320px;
+  height: 230px;
   transition: filter 0.9s ease;
 }
 
-.card > img:hover {
+/* .card > img:hover {
   cursor: pointer;
   filter: sepia(0);
-  filter: saturate(2.2);
+  filter: saturate(2.5);
+} */
+
+/* CARD BG */
+.bg-card1 {
+  z-index: 1;
+  background-color: #464b4d;
+  margin-top: -40px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.bg-card1 {
-  margin-top: -50px;
-  background-color: #414546;
+.bg-card2 {
+  z-index: 1;
+  background-color: #25241c;
+  margin-top: -40px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bg-card3 {
+  z-index: 1;
+  background-color: #4a435d;
+  margin-top: -40px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bg-card4 {
+  z-index: 1;
+  background-color: #615652;
+  margin-top: -40px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* LEFT SIDE */
+.card-text > .text-white {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.card-text > .text-grey {
+  font-weight: 500;
+  margin: 5px 0px;
+}
+
+.card-text > img {
+  margin: 7px 0px;
+  margin-bottom: 15px;
+}
+
+/* RIGHT SIDE */
+.bg-orange.card-button {
+  padding: 10px 25px;
+  font-size: 15px;
+  border: none;
 }
