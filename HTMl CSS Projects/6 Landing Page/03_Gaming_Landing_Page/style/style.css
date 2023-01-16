@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: 'Poppins', 'sans-serif';
 }
 
 .bg-image {
@@ -28,6 +28,7 @@ body {
 .bg-orange {
   background-color: #f4694c;
   color: #ffffff;
+  border: none;
 }
 
 .big-button {
@@ -45,6 +46,17 @@ body {
 
 .text-black {
   color: #121212;
+}
+.text-orange {
+  color: #f4694c;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0px;
+}
+
+.bg-black {
+  background-color: #000308;
+  margin-top: 30px;
 }
 
 .flex {
@@ -135,22 +147,24 @@ header {
 }
 
 /* CARD */
-
 .game-cards {
   margin-top: 70px;
   display: flex;
   justify-content: space-around;
 }
 
-.card {
-  transition: transform 500ms ease;
+.card.hover {
+  transition: all 500ms ease;
+  cursor: pointer;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card.hover:hover {
+  transform: scale(1.06);
+  filter: sepia(0.1);
+  filter: saturate(2.2);
 }
 
-.card > img {
+.card > .img {
   position: relative;
   z-index: -1;
   width: 320px;
@@ -165,47 +179,34 @@ header {
 } */
 
 /* CARD BG */
-.bg-card1 {
+.bg-card1,
+.bg-card2,
+.bg-card3,
+.bg-card4 {
   z-index: 1;
-  background-color: #464b4d;
   margin-top: -40px;
   text-align: left;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.bg-card1 {
+  background-color: #464b4d;
 }
 
 .bg-card2 {
-  z-index: 1;
   background-color: #25241c;
-  margin-top: -40px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .bg-card3 {
-  z-index: 1;
   background-color: #4a435d;
-  margin-top: -40px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .bg-card4 {
-  z-index: 1;
   background-color: #615652;
-  margin-top: -40px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
-/* LEFT SIDE */
 .card-text > .text-white {
   font-size: 18px;
   font-weight: 500;
@@ -222,9 +223,255 @@ header {
   margin-bottom: 15px;
 }
 
-/* RIGHT SIDE */
 .bg-orange.card-button {
   padding: 10px 25px;
   font-size: 15px;
   border: none;
+}
+
+/*EXPLORE SECTION  */
+.explore {
+  margin: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.explore > div > img {
+  width: 600px;
+  height: 500px;
+  margin-right: 80px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.explore > div > img:hover {
+  transform: scale(1.1);
+  filter: sepia(0.1);
+  filter: saturate(1.6);
+}
+
+.explore > div > .text-black {
+  font-size: 54px;
+  font-weight: 600;
+  font-family: 'Poppins';
+}
+
+.explore > div > .text-grey {
+  margin-top: 10px;
+  line-height: 40px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.buttons > .bg-orange {
+  padding: 15px 35px;
+  font-size: 20px;
+  border: none;
+  margin-right: 30px;
+}
+
+.buttons > .bg-transparent.text-white {
+  padding: 15px 35px;
+  font-size: 20px;
+  color: #f4694c;
+  border: 1px solid #f4694c;
+}
+
+/* Recommend Section */
+.recommended {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
+}
+
+.recommended > div > .text-black {
+  font-family: 'Poppins';
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.recommended > div > button {
+  border: none;
+  padding: 25px 20px;
+}
+.lightButton {
+  background-color: #fde1db;
+  margin-right: 20px;
+}
+.darkButton {
+  background-color: #f4694c;
+}
+
+/* Recommended Section Cards */
+.recommended-card {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.recommended-card-image {
+  margin-right: 40px;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.recommended-card-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 7px 9px #999999;
+  filter: sepia(0.1);
+  filter: saturate(2.2);
+}
+
+.card-details > .text-black {
+  font-size: 30px;
+}
+
+.bg-orange.card-button {
+  margin-top: 20px;
+  padding: 15px 35px;
+  font-size: 20px;
+  border: none;
+}
+
+/* BLACK SECTION */
+.bg-black > .text-white {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+section > .flex {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.images-section > img {
+  margin-right: 60px;
+  width: 400px;
+}
+
+.gameOfWorld {
+  z-index: -4;
+  margin-left: -75px;
+  margin-top: 100px;
+  width: 1000px !important;
+}
+
+.devilgirl {
+  width: 300px;
+  height: 400px;
+  margin-left: 50px;
+  margin-top: -50px;
+}
+
+.archiman {
+  width: 300px;
+
+  margin-left: 90px;
+}
+
+/* CSS */
+.unforgettable {
+  margin-top: 150px;
+  height: 500px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../Assets/Photos/Rectangle\ 606.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.unforgettable-content {
+  text-align: center;
+}
+
+.unforgettable-content h2 {
+  color: white;
+  font-family: 'Poppins';
+  padding-top: 3em;
+  font-size: 40px;
+  padding-bottom: 0.5em;
+}
+
+.unforgettable-content p {
+  color: #8d8d8f;
+  padding-left: 1em;
+  padding-bottom: 3em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footer-lists {
+  display: flex;
+  justify-content: center;
+  gap: 8em;
+}
+
+.footer-lists li {
+  color: #86878b;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.footer-lists li:hover {
+  color: #dfdfdf;
+  transform: scale(1.1);
+}
+
+.footer-listone p {
+  color: #86878b;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.footer-listone p:hover {
+  color: #dfdfdf;
+}
+
+.footer-lists h4 {
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 1.5em;
+  /* color: #86878b */
+}
+
+.footer-listone img {
+  margin-bottom: 1em;
+}
+
+.icons img {
+  cursor: pointer;
+  margin-right: 0.5em;
+  transition: all 200ms ease-in-out;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-line {
+  border: 0;
+  height: 2px;
+  background: #202d39;
+  margin: auto;
+}
+
+.line {
+  padding-top: 1.5em;
+  padding-bottom: 4em;
 }

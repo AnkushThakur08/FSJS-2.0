@@ -95,8 +95,13 @@
 
       <div class="game-cards">
         <!-- Card-1 -->
-        <div class="card">
-          <img src="./Assets/Photos/image 2.png" alt="gameImage" srcset="" />
+        <div class="card hover">
+          <img
+            class="img"
+            src="./Assets/Photos/image 2.png"
+            alt="gameImage"
+            srcset=""
+          />
 
           <div class="bg-card1">
             <div class="card-text">
@@ -117,8 +122,13 @@
 
         <!-- Card 2 -->
 
-        <div class="card">
-          <img src="./Assets/Photos/image 4.png" alt="gameImage" srcset="" />
+        <div class="card hover">
+          <img
+            class="img"
+            src="./Assets/Photos/image 4.png"
+            alt="gameImage"
+            srcset=""
+          />
 
           <div class="bg-card2">
             <div class="card-text">
@@ -138,8 +148,13 @@
         </div>
 
         <!-- Card-3 -->
-        <div class="card">
-          <img src="./Assets/Photos/image 3.png" alt="gameImage" srcset="" />
+        <div class="card hover">
+          <img
+            class="img"
+            src="./Assets/Photos/image 3.png"
+            alt="gameImage"
+            srcset=""
+          />
 
           <div class="bg-card3">
             <div class="card-text">
@@ -159,8 +174,9 @@
         </div>
 
         <!-- Card-4 -->
-        <div class="card">
+        <div class="card hover">
           <img
+            class="img"
             src="./Assets/Photos/Rectangle 56.png"
             alt="gameImage"
             srcset=""
@@ -223,21 +239,63 @@
 
       <!-- Right Section -->
       <div>
-        <button>
+        <button class="lightButton">
           <img src="./Assets/Icons/leftArrow.svg" alt="" srcset="" />
         </button>
-        <button>
+        <button class="darkButton">
           <img src="./Assets/Icons/nextArrow.svg" alt="" srcset="" />
         </button>
       </div>
     </section>
 
-    <!-- Cards-1 -->
-    <section class="cards">
+    <!-- SECTION -1 -->
+    <section class="game-cards">
       <!-- Card - 1  -->
-      <div class="card">
+      <div class="recommended-card">
         <img
+          class="recommended-card-image"
           src="./Assets/Photos/Rectangle 75.png"
+          alt="game image"
+          srcset=""
+        />
+        <div class="card-details">
+          <h2 class="text-black">The world's strong human battle</h2>
+          <p class="text-orange">Action, Sport</p>
+          <p class="text-grey">
+            This is a game about the battle of the strongest humans on earth
+          </p>
+
+          <button class="bg-orange card-button">Download</button>
+        </div>
+      </div>
+
+      <!-- Card - 2 -->
+      <div class="recommended-card">
+        <img
+          class="recommended-card-image"
+          src="./Assets/Photos/Rectangle 76.png"
+          alt="game image"
+          srcset=""
+        />
+        <div class="card-details">
+          <h2 class="text-black">Adventure in snake cave danger</h2>
+          <p class="text-orange">Adventure, Actions</p>
+          <p class="text-grey">
+            Adventure is a dangerous snake cave with friends who were going on
+            vacation
+          </p>
+          <button class="bg-orange card-button">Download</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION -2 -->
+    <section class="game-cards">
+      <!-- Card - 3  -->
+      <div class="recommended-card">
+        <img
+          class="recommended-card-image"
+          src="./Assets/Photos/Rectangle 77.png"
           alt="game image"
           srcset=""
         />
@@ -245,14 +303,16 @@
           <h2 class="text-black">Super hero wearing spider mask</h2>
           <p class="text-orange">Strategy,Action</p>
           <p class="text-grey">
-            A Superhero wearing a spider mask who helps many people in the world
+            A Superhero wearing spider mask who helps many people in the world
           </p>
-          <button class="bg-orange">Download</button>
+          <button class="bg-orange card-button">Download</button>
         </div>
       </div>
+
       <!-- Card - 2 -->
-      <div class="card">
+      <div class="recommended-card">
         <img
+          class="recommended-card-image"
           src="./Assets/Photos/Rectangle 78.png"
           alt="game image"
           srcset=""
@@ -264,57 +324,111 @@
             Omongken is the best podcast that you is the best podcast that you
             can use
           </p>
-          <button class="bg-orange">Download</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cards-2 -->
-
-    <section class="cards">
-      <!-- Card - 3  -->
-      <div class="card">
-        <img
-          src="./Assets/Photos/Rectangle 77.png"
-          alt="game image"
-          srcset=""
-        />
-        <div class="card-details">
-          <h2 class="text-black">The World's strongest human battle</h2>
-          <p class="text-orange">Action, Sport</p>
-          <p class="text-grey">
-            This is a game about the battle of the strongest humans on earth
-          </p>
-          <button class="bg-orange">Download</button>
-        </div>
-      </div>
-      <!-- Card - 2 -->
-      <div class="card">
-        <img
-          src="./Assets/Photos/Rectangle 76.png"
-          alt="game image"
-          srcset=""
-        />
-        <div class="card-details">
-          <h2 class="text-black">Adventure in snake cave danger</h2>
-          <p class="text-orange">Adventures, Actions</p>
-          <p class="text-grey">
-            Adventure in a dangerous snake cave with friends who were going on
-            vacations
-          </p>
-          <button class="bg-orange">Download</button>
+          <button class="bg-orange card-button">Download</button>
         </div>
       </div>
     </section>
 
     <!-- Most Played Game -->
     <section class="bg-black">
-      <h1 class="text-black">
+      <h1 class="text-white">
         Most Played Games
 
         <br />
         Of The Year
       </h1>
+
+      <div class="flex">
+        <!-- LEFT SIDE -->
+        <div class="images-section">
+          <img src="./Assets/Photos/Rectangle 17.png" alt="" srcset="" />
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div>
+          <p class="text-grey">
+            We have data on the most played games in this year and as a result,
+            games about battles and wars are very popular with gamers at this
+            time, so we recommended his game into your cart to be used as your
+            game
+          </p>
+
+          <img
+            class="gameOfWorld"
+            src="./Assets/Icons/GAMES OF THE WORLD.svg"
+            alt="game of World"
+            srcset=""
+          />
+
+          <img
+            class="devilgirl"
+            src="./Assets/Photos/Rectangle 18.png"
+            alt="devilgirl"
+            srcset=""
+          />
+
+          <img
+            class="archiman"
+            src="./Assets/Photos/Rectangle 90.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+
+      <div class="unforgettable">
+        <div class="unforgettable-content">
+            <h2>Have An Unforgettable 
+              <br />
+              Experience</h2>
+            <p>Have an unforgettable experience and play now to
+              <br />
+              get attractive promos</p>
+            <button button class="bg-orange big-button">Get started</button>
+        </div>
+    </div>
+</section>
+<footer>
+    <!-- Footer-lists & Footer line -->
+    <div class="footer-lists">
+        <div class="footer-listone">
+            <img src="./Assets/Icons/Logo.svg" alt="">
+            <p>Play lots of games here and <br> subscribe right away</p>
+            <div class="icons">
+                <img src="./Assets/Icons/facebook.svg" alt="facebook icon">
+                <img src="./Assets/Icons/instagram.svg" alt="instagram icon">
+                <img src="./Assets/Icons/twitter.svg" alt="twitter icon">
+            </div>
+        </div>
+        <ul class="articles">
+            <h4>Articles</h4>
+            <li>Crowdfunding</li>
+            <li>Website donations</li>
+            <li>Careers</li>
+            <li>Event registrations</li>
+            <li>Newsrooms</li>
+        </ul>
+        <ul class="leagues">
+            <h4>Leagues</h4>
+            <li>Our Story</li>
+            <li>Community driven</li>
+            <li>Our customers</li>
+            <li>Expert Support</li>
+        </ul>
+        <ul class="team">
+            <h4>Team</h4>
+            <li>About us</li>
+            <li>FAQ</li>
+            <li>Privacy & Policy</li>
+            <li>Help</li>
+        </ul>
+        <ul class="get-in">
+            <h4>Get in touch</h4>
+            <li>(704)555-0127</li>
+        </ul>
+    </div>
+    <div class="line"><hr class="footer-line"></div>
+</footer>
     </section>
   </body>
 </html>
