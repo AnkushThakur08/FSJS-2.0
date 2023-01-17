@@ -32,7 +32,7 @@ nav > img {
   height: 120px;
   width: 120px;
   cursor: pointer;
-  transition: all 500ms ease-in;
+  transition: all 400ms ease-in-out;
 }
 
 nav > img:hover {
@@ -90,6 +90,15 @@ hr {
   color: white;
   font-weight: 700;
   font-size: 20px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  border: none;
+}
+
+.purpleButton:hover {
+  background-color: #ffffff;
+  color: #6663e9;
+  transform: scale(1.1);
 }
 
 /* LOGO BAR */
@@ -103,6 +112,20 @@ hr {
   margin-top: -50px;
   border-radius: 20px;
   box-shadow: 0px 7px 9px #e1dede;
+}
+
+.logo-bar > img {
+  animation: scroll 1s infinite linear;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-20px);
+  }
 }
 
 /* BEFORE CARD */
@@ -136,6 +159,14 @@ hr {
   border-radius: 20px;
   object-fit: cover;
   z-index: 2;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.card > img:hover {
+  transform: scale(1.08);
+  filter: sepia(0.1);
+  filter: saturate(2.2);
 }
 
 .content {
@@ -177,11 +208,14 @@ hr {
   padding: 1em 2em;
   font-weight: 600;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 /* ROW-2 */
 .cards-div-body.card-reverse {
   flex-direction: row-reverse;
+  margin-left: 60px !important;
+  margin-right: 80px !important;
 }
 
 .card2 {
@@ -226,6 +260,13 @@ hr {
   border-radius: 45px;
   width: 500px;
   height: 450px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.home-image:hover {
+  filter: sepia(0.1);
+  filter: saturate(1.8);
+  transform: scale(1.05);
 }
 
 .text1 {
@@ -262,6 +303,14 @@ hr {
   font-size: 20px;
   padding: 20px 35px;
   margin-top: 30px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #27292e;
+  color: #ffffff;
 }
 
 /* IMAGE - 2 */
@@ -285,6 +334,14 @@ hr {
   border-radius: 45px;
   width: 445px;
   height: 400px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.home-image2:hover {
+  filter: sepia(0.1);
+  filter: saturate(1.8);
+  transform: scale(1.05);
 }
 
 .text2 {
@@ -353,6 +410,14 @@ hr {
   font-size: 20px;
   color: #6663e9;
   padding: 15px 25px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.subscribe-button:hover {
+  background-color: #27292e;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 .bottom-section {
@@ -368,6 +433,13 @@ hr {
   display: flex;
   gap: 30px;
 }
+.social-media-images > img {
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+.social-media-images > img:hover {
+  transform: scale(1.1);
+}
 
 .lists {
   display: flex;
@@ -376,6 +448,15 @@ hr {
 }
 .bottom-lists {
   line-height: 50px;
+}
+
+.bottom-lists > p {
+  cursor: pointer;
+}
+
+.bottom-lists > p:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 /* mobile divices */
