@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Beats Landing Page</title>
   </head>
@@ -27,7 +32,7 @@
     </nav>
 
     <!-- Header Section -->
-    <header>
+    <header class="flex">
       <div class="bg-headphone">
         <img src="./Photos/mainImage.png" alt="Headphone-image" srcset="" />
       </div>
@@ -35,20 +40,19 @@
       <div>
         <img src="./Photos/onEar.png" alt="on-ear-image" class="on-ear" />
         <h1 class="text-white heading">Beats 3</h1>
-        <p class="text-white">Overview</p>
-        <p class="text-white">
+        <p class="text-white sub-heading">Overview</p>
+        <p class="text-white para">
           Enjoy award-winning Beats sound with wireless listening freedom and a
           sleek, streamlined design with comfortable padded earphones,delivering
           first-rate playback
         </p>
 
-        <img src="./Icons/shoppingBag.png" alt="cart" srcset="" />
-        <button>Add to Bag <span>N399k</span></button>
+        <button class="Add-to-bag">Add to Bag <span>N399k</span></button>
       </div>
     </header>
 
     <!-- Brand Image Section -->
-    <section>
+    <section class="brand-section">
       <img src="./Photos/appleLogo.png" alt="Apple Logo" srcset="" />
       <img src="./Photos/spotifyLogo.png" alt="Spotify Logo" srcset="" />
       <img src="./Photos/amazonLogo.png" alt="amazon logo" srcset="" />
@@ -56,33 +60,33 @@
     </section>
 
     <!-- SPEC Section -->
-    <section>
+    <section class="spec">
       <img src="./Icons/specsLogo.png" alt="spec logo" srcset="" />
 
       <div class="spec-section">
         <div>
-          <section>
+          <section class="top-bottom">
             <img src="./Icons/bluetooth.png" alt="bluetooth-image" srcset="" />
             <p class="text-white">Connection</p>
-            <p class="text-white">Bluetooth v5.2</p>
+            <h5 class="text-white">Bluetooth v5.2</h5>
           </section>
 
-          <section>
+          <section class="middle">
             <img src="./Icons/battery.png" alt="battery-image" srcset="" />
             <p class="text-white">Battery</p>
-            <p class="text-white">Duration 40h</p>
+            <h5 class="text-white">Duration 40h</h5>
           </section>
 
-          <section>
+          <section class="middle">
             <img src="./Icons/charger.png" alt="charger-image" srcset="" />
             <p class="text-white">Load</p>
-            <p class="text-white">Fast Charge 4.0-AAC</p>
+            <h5 class="text-white fastCharge">Fast Charge 4.0-AAC</h5>
           </section>
 
-          <section>
+          <section class="top-bottom">
             <img src="./Icons/mic.png" alt="mic-image" srcset="" />
             <p class="text-white">Microphone</p>
-            <p class="text-white">Support Apple Siri and Google</p>
+            <h5 class="text-white mic">Support Apple Siri & Google</h5>
           </section>
         </div>
 
@@ -93,23 +97,26 @@
     </section>
 
     <!-- Case Section -->
-    <section>
+    <section class="case">
       <img src="./Icons/caseLogo.png" alt="case-logo" srcset="" />
 
-      <div class="case-image">
-        <img src="./Photos/caseImage.png" alt="case-image" srcset="" />
-      </div>
-      <div>
-        <p class="text-white">
-          With a comfortable and adaptable case so that you can store it
-          whenever you want, and keep your durability forever
-        </p>
+      <div class="case-section">
+        <div class="case-image">
+          <img src="./Photos/caseImage.png" alt="case-image" srcset="" />
+        </div>
 
-        <button>
-          <img src="./Icons/group.png" alt="" srcset="" />
-          More info
-        </button>
+        <div>
+          <p class="text-white">
+            With a comfortable and adaptable case so that you can store it
+            whenever you want, and keep your durability forever
+          </p>
+        </div>
       </div>
+
+      <button>
+        <img src="./Icons/group.png" alt="" srcset="" />
+        More info
+      </button>
     </section>
 
     <!-- Immerse Section -->
