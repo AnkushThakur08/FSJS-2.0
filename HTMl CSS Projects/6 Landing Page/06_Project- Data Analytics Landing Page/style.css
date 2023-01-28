@@ -1,0 +1,1403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.bg-trapezium {
+  background: #ebf5ff;
+  background: -webkit-linear-gradient(bottom, #dae9f8);
+  background: -moz-linear-gradient(bottom, #dae9f8);
+  background: linear-gradient(to top, #dae9f8, #ffffff);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 97%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+.navlist {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.list-item {
+  list-style-type: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.list-item:hover {
+  color: #6012cc;
+  cursor: pointer;
+}
+
+.footer-lists > * {
+  cursor: pointer;
+}
+
+.footer-lists ul li:hover {
+  color: #5c5b5b;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: lighter;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.card-trial-btn:hover {
+  color: #ffffff;
+  background-color: #6012cc;
+  text-shadow: 0px 0px 16px rgba(255, 255, 255, 1);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.free-trial-btn {
+  background-color: #ffffff;
+  padding: 5px 15px 5px 15px;
+  color: #6012cc;
+  border: 1px solid #6012cc;
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+.free-trial-btn:hover {
+  color: #ffffff;
+  background-color: #6012cc;
+  text-shadow: 0px 0px 16px rgba(255, 255, 255, 1);
+  transition: all 0.4s ease 0s;
+}
+
+.free-trial-two {
+  color: #ffffff;
+  padding: 8px 18px 8px 18px;
+  background-color: #7a3ad4;
+  border: none;
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+.free-trial-two:hover {
+  background-color: #ffffff;
+  color: #6012cc;
+}
+
+.learn-more {
+  background-color: #ffffff;
+  padding: 8px 18px 8px 18px;
+  color: #6012cc;
+  border: none;
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+.learn-more:hover {
+  color: #ffffff;
+  background-color: #6012cc;
+  text-shadow: 0px 0px 16px rgba(255, 255, 255, 1);
+  transition: all 0.4s ease 0s;
+}
+
+.arrow {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(135deg);
+}
+
+.fa {
+  color: #747474;
+}
+
+.version-released {
+  background-color: #f7f1ff;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  width: 43%;
+  border-radius: 20px;
+  padding: 10px;
+  color: #6012cc;
+  font-size: 0.9rem;
+  margin-top: 5%;
+}
+
+.version-path {
+  display: flex;
+  flex-direction: column;
+}
+
+.version-released a {
+  color: #6012cc;
+  text-decoration: 0.5px solid underline;
+}
+
+.header-section {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.header-container {
+  display: flex;
+  width: 89%;
+  margin: auto;
+}
+
+.header-left {
+  width: 50%;
+}
+
+.header-left h1 {
+  margin-top: 5%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1em;
+  width: 75%;
+}
+
+.header-right {
+  width: 50%;
+}
+
+.header-right img {
+  width: 85%;
+}
+
+.header-left p {
+  width: 85%;
+  color: #7c8085;
+  font-size: 0.9rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.header-btns {
+  display: flex;
+  gap: 15px;
+  width: 90%;
+}
+
+.qubly-container {
+  width: 75%;
+  margin: auto;
+  margin-top: 7%;
+}
+
+.why-qubly {
+  background-color: #f7f1ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 14%;
+  border-radius: 20px;
+  padding: 8px 13px 8px 13px;
+  color: #6012cc;
+  font-size: 1rem;
+  margin-top: 5%;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.why-qubly img {
+  height: 15px;
+}
+
+.qubly-first h2 {
+  margin: auto;
+  text-align: center;
+  word-spacing: 4px;
+  font-size: 2rem;
+  margin-bottom: 1.5%;
+}
+
+.qubly-first p {
+  text-align: center;
+  color: #7c8085;
+  font-size: 0.9rem;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.qubly-second {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.qubly-step-one {
+  text-align: center;
+}
+
+.qubly-step-one h4 {
+  font-size: 0.9rem;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.qubly-step-one p {
+  color: #7c8085;
+  font-size: 0.9rem;
+  width: 78%;
+  margin: auto;
+}
+
+.qubly-step-two {
+  text-align: center;
+}
+
+.qubly-step-two h4 {
+  font-size: 0.9rem;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.qubly-step-two p {
+  color: #7c8085;
+  font-size: 0.9rem;
+  width: 78%;
+  margin: auto;
+}
+
+.qubly-step-three {
+  text-align: center;
+}
+
+.qubly-step-three h4 {
+  font-size: 0.9rem;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.qubly-step-three p {
+  color: #7c8085;
+  font-size: 0.9rem;
+  width: 78%;
+  margin: auto;
+}
+
+.products-team {
+  background-color: #f7f1ff;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 35%;
+  border-radius: 20px;
+  padding: 8px 13px 8px 13px;
+  color: #6012cc;
+  font-size: 1rem;
+  margin-bottom: 2%;
+}
+
+.products-team img {
+  height: 20px;
+}
+
+.products-team-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 10%;
+  justify-content: center;
+}
+
+.products-group {
+  width: 50%;
+}
+
+.products-group img {
+  width: 90%;
+}
+
+.products-content {
+  width: 50%;
+}
+
+.products-content p {
+  color: #7c8085;
+  width: 85%;
+  margin-top: 5%;
+}
+
+.for-engineers {
+  background-color: #f7f1ff;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 40%;
+  border-radius: 20px;
+  padding: 8px 13px 8px 13px;
+  color: #6012cc;
+  font-size: 1rem;
+  margin-bottom: 2%;
+}
+
+.for-engineers img {
+  height: 20px;
+}
+
+.engineering-teams-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.pipeline-tools {
+  width: 50%;
+}
+
+.pipeline-tools img {
+  width: 100%;
+}
+
+.engineering-content {
+  width: 50%;
+}
+
+.engineering-content p {
+  color: #7c8085;
+  width: 83%;
+  margin-top: 5%;
+}
+
+.cto-section {
+  width: 80%;
+  margin: auto;
+}
+
+.cto {
+  clip-path: polygon(0% 18%, 100% 0%, 100% 82%, 0% 100%);
+  background: linear-gradient(to top, #f4f8ff, #f4ecf9);
+}
+
+.cto-section p {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 10%;
+}
+
+.cto-profile {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.cto-name {
+  margin: 3% auto;
+}
+
+.wrap-line {
+  border-bottom: 3px solid #eae4fa;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.logos-group {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  padding-bottom: 10%;
+}
+
+.logos-group img {
+  width: 10%;
+}
+
+.last-section {
+  width: 90%;
+  margin: 10% auto;
+  display: flex;
+}
+
+.why-qubly-container {
+  width: 50%;
+}
+
+.why-qubly-container h2 {
+  width: 65%;
+  margin: auto;
+}
+
+.first-line,
+.second-line {
+  border-bottom: 3px solid #eaeaea;
+  width: 30%;
+  margin: 3%;
+}
+
+.trusted-by-line {
+  width: 72%;
+  display: flex;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.trusted-by-line span {
+  color: #97979e;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 22%;
+}
+
+.why-qubly-logos {
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 60px;
+  row-gap: 60px;
+}
+
+.why-qubly-logos img {
+  width: 30%;
+}
+
+.sign-up-container {
+  width: 50%;
+}
+
+.sign-up-section {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f0ff;
+}
+
+.sign-up-card {
+  width: 90%;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 20px;
+  box-shadow: 6px 6px 11px -1px rgba(59, 58, 58, 0.23);
+}
+
+.sign-up-card h3 {
+  font-size: 1.3rem;
+  padding: 3%;
+}
+
+.card-trial-btn {
+  width: 80%;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  background-color: #7a3ad4;
+  border: none;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+.sign-up-card input {
+  width: 80%;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5%;
+  border: 2px solid #e9e9e9;
+  font-weight: 500;
+  color: #616161;
+  outline: 0;
+}
+
+.sign-up-card input::placeholder {
+  color: #9f9fb3;
+  border: 0;
+}
+
+.signin-section {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-btn {
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  background-color: #4285f4;
+  border: none;
+  font-weight: 600;
+}
+
+.google-icon {
+  width: 8.7%;
+  border: 2px solid #4285f4;
+}
+
+.google-btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+  box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+}
+.google-btn:active {
+  background-color: #3367d6;
+  transition: background-color 0.2s;
+}
+
+.sign-up-line {
+  border-bottom: 3px solid #eaeaea;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.already-account {
+  margin-bottom: 8%;
+  color: #9f9fb3;
+}
+
+.already-account a {
+  text-decoration: none;
+  color: #7838d3;
+}
+
+footer {
+  background-color: #fbfcff;
+}
+
+.footer-lists {
+  padding-top: 4%;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+.footer-lists ul li {
+  list-style-type: none;
+  margin-bottom: 10%;
+  font-size: 0.9rem;
+}
+
+.footer-lists h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 15%;
+}
+
+.social img {
+  margin-right: 1%;
+}
+
+.footer-social {
+  width: 22%;
+  margin-bottom: 10%;
+  font-size: 0.9rem;
+}
+
+.footer-social p {
+  margin: 5% auto;
+}
+
+.newsletter input {
+  border: none;
+  background-color: #ffffff;
+  padding: 3%;
+  box-shadow: 2px 2px 6px -1px rgba(124, 122, 122, 0.23);
+  outline: 0;
+}
+
+.newsletter img {
+  position: relative;
+  left: 70%;
+  bottom: 25px;
+  width: 10%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #7a3ad4;
+}
+
+@media (max-width: 1024px) {
+  .header-section {
+    width: 90%;
+  }
+
+  .header-container {
+    width: 95%;
+  }
+
+  .version-released {
+    width: 60%;
+    margin-top: 0%;
+  }
+
+  .header-right img {
+    width: 100%;
+  }
+
+  .why-qubly {
+    width: 20%;
+  }
+
+  .qubly-container {
+    width: 80%;
+  }
+
+  .qubly-first h2 {
+    font-size: 1.9rem;
+  }
+
+  .qubly-first p {
+    width: 85%;
+    font-size: 0.8rem;
+  }
+
+  .qubly-container {
+    width: 100%;
+  }
+
+  .qubly-second {
+    width: 95%;
+    gap: 10px;
+  }
+
+  .qubly-step-one p {
+    width: 84%;
+  }
+
+  .qubly-step-two p {
+    width: 87%;
+  }
+
+  .qubly-step-three p {
+    width: 90%;
+  }
+
+  .products-team-container {
+    width: 95%;
+    gap: 20px;
+  }
+
+  .products-team {
+    width: 45%;
+  }
+
+  .products-content p {
+    width: 90%;
+  }
+
+  .engineering-teams-container {
+    width: 95%;
+    gap: 20px;
+  }
+
+  .for-engineers {
+    width: 53%;
+  }
+
+  .engineering-content p {
+    width: 90%;
+  }
+
+  .cto-section p {
+    padding-top: 13%;
+  }
+
+  .wrap-line {
+    margin-top: 3%;
+  }
+
+  .logos-group {
+    padding-bottom: 13%;
+  }
+
+  .logos-group img {
+    width: 12%;
+  }
+
+  .why-qubly-container h2 {
+    width: 80%;
+  }
+
+  .trusted-by-line {
+    width: 85%;
+  }
+
+  .why-qubly-logos {
+    width: 70%;
+    margin-left: 6%;
+  }
+
+  .trusted-by-line span {
+    width: 25%;
+  }
+
+  .last-section {
+    width: 90%;
+  }
+
+  .sign-up-section {
+    width: 85%;
+  }
+
+  .google-icon {
+    width: 11.5%;
+  }
+
+  .footer-lists {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26%, 1fr));
+    row-gap: 40px;
+    column-gap: 20px;
+  }
+
+  .footer-lists h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+  }
+
+  .footer-lists ul li {
+    list-style-type: none;
+    margin-bottom: 3%;
+    font-size: 0.9rem;
+  }
+
+  .footer-social {
+    width: 80%;
+  }
+
+  .newsletter img {
+    position: relative;
+    left: -15%;
+    bottom: -4px;
+    width: 8%;
+  }
+}
+
+@media (max-width: 850px) {
+  .version-released {
+    width: 70%;
+    margin-top: 0%;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navlist {
+    position: fixed;
+    right: -100%;
+    top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f4fd;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 100000;
+    gap: 30px;
+  }
+
+  .list-item {
+    margin-top: 3%;
+  }
+
+  .navlist.active {
+    right: 0;
+  }
+
+  .free-trial-btn {
+    margin-bottom: 3%;
+  }
+
+  .qubly-container {
+    width: 85%;
+  }
+
+  .why-qubly {
+    width: 25%;
+  }
+
+  .qubly-first h2 {
+    margin-bottom: 3%;
+  }
+
+  .qubly-first p {
+    width: 80%;
+  }
+
+  .qubly-first p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .qubly-second {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5%;
+    gap: 15px;
+  }
+
+  .qubly-step-one p {
+    width: 49%;
+  }
+
+  .qubly-step-two p {
+    width: 49%;
+  }
+
+  .qubly-step-three p {
+    width: 49%;
+  }
+
+  .products-team-container {
+    margin-top: 10%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .products-content {
+    width: 85%;
+  }
+
+  .products-content p {
+    width: 95%;
+  }
+
+  .products-team {
+    width: 40%;
+  }
+
+  .products-group {
+    width: 70%;
+  }
+
+  .products-group img {
+    width: 100%;
+  }
+
+  .engineering-teams-container {
+    margin-top: 10%;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .engineering-content {
+    width: 85%;
+  }
+
+  .for-engineers {
+    width: 46%;
+  }
+
+  .pipeline-tools {
+    width: 80%;
+  }
+
+  .cto-section {
+    width: 90%;
+  }
+
+  .cto-section p {
+    width: 90%;
+    padding-top: 17%;
+    font-size: 1rem;
+  }
+
+  .wrap-line {
+    width: 100%;
+  }
+
+  .logos-group {
+    width: 90%;
+    justify-content: space-between;
+    padding-bottom: 17%;
+  }
+
+  .logos-group img {
+    width: 12%;
+  }
+
+  .why-qubly-container h2 {
+    width: 100%;
+  }
+
+  .trusted-by-line {
+    width: 100%;
+  }
+
+  .why-qubly-logos {
+    width: 80%;
+    margin-left: 0%;
+  }
+
+  .last-section {
+    width: 95%;
+  }
+
+  .sign-up-section {
+    width: 100%;
+  }
+
+  .google-icon {
+    width: 12%;
+  }
+
+  .newsletter img {
+    position: relative;
+    left: 82%;
+    bottom: 25px;
+    width: 8%;
+  }
+}
+
+@media (max-width: 480px) {
+  .version-released {
+    width: 65%;
+    margin-top: 5%;
+  }
+
+  .header-container {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .header-left {
+    width: 100%;
+  }
+
+  .header-left h1 {
+    width: 88%;
+    font-size: 2rem;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+
+  .header-right img {
+    width: 80%;
+  }
+
+  .qubly-container {
+    width: 90%;
+  }
+
+  .why-qubly {
+    width: 40%;
+    margin-bottom: 5%;
+  }
+
+  .qubly-first h2 {
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 2.1rem;
+    word-spacing: 0px;
+  }
+
+  .qubly-first p {
+    width: 100%;
+  }
+
+  .qubly-first p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .qubly-second {
+    width: 90%;
+  }
+
+  .qubly-step-one p {
+    width: 79%;
+  }
+
+  .qubly-step-two p {
+    width: 79%;
+  }
+
+  .qubly-step-three p {
+    width: 79%;
+  }
+
+  .products-team-container {
+    width: 90%;
+  }
+
+  .products-team {
+    width: 65%;
+  }
+
+  .products-group {
+    width: 80%;
+  }
+
+  .products-content {
+    width: 90%;
+  }
+
+  .products-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .products-content p {
+    font-size: 0.9rem;
+  }
+
+  .engineering-teams-container {
+    width: 90%;
+  }
+
+  .engineering-content {
+    width: 95%;
+  }
+
+  .engineering-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .engineering-content p {
+    font-size: 0.9rem;
+  }
+
+  .for-engineers {
+    width: 69%;
+  }
+
+  .pipeline-tools {
+    width: 95%;
+  }
+
+  .cto-section p {
+    padding-top: 30%;
+    font-size: 0.9rem;
+  }
+
+  .logos-group {
+    padding-bottom: 30%;
+  }
+
+  .logos-group img {
+    width: 15%;
+  }
+
+  .last-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-qubly-container {
+    width: 90%;
+    margin-bottom: 30%;
+  }
+
+  .sign-up-container {
+    width: 90%;
+  }
+
+  .google-icon {
+    width: 12.4%;
+  }
+
+  .footer-lists {
+    width: 85%;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    column-gap: 35px;
+  }
+
+  .footer-social {
+    width: 95%;
+  }
+
+  .newsletter input {
+    width: 85%;
+  }
+
+  .newsletter img {
+    position: relative;
+    left: -17%;
+    bottom: -3px;
+    width: 10%;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-social p {
+    font-size: 0.7rem;
+  }
+
+  .footer-lists h4 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 5%;
+  }
+
+  .footer-lists ul li {
+    list-style-type: none;
+    margin-bottom: 3%;
+    font-size: 0.7rem;
+  }
+
+  .header-btns {
+    width: 100%;
+  }
+
+  .products-team {
+    width: 69%;
+  }
+
+  .products-group {
+    margin: auto;
+  }
+
+  .products-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .for-engineers {
+    width: 74%;
+  }
+
+  .version-released {
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  .header-left h1 {
+    width: 95%;
+    font-size: 1.9rem;
+  }
+
+  .header-left p {
+    width: 85%;
+    font-size: 0.9rem;
+  }
+
+  .header-right img {
+    width: 90%;
+  }
+
+  .qubly-container {
+    width: 90%;
+  }
+
+  .why-qubly {
+    width: 45%;
+    margin-bottom: 5%;
+  }
+
+  .qubly-first h2 {
+    width: 75%;
+    margin-bottom: 6%;
+    font-size: 1.8rem;
+    word-spacing: 0px;
+  }
+
+  .qubly-first p {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .qubly-step-one p {
+    width: 89%;
+  }
+
+  .qubly-step-two p {
+    width: 89%;
+  }
+
+  .qubly-step-three p {
+    width: 89%;
+  }
+
+  .logos-group {
+    width: 95%;
+  }
+
+  .logos-group img {
+    width: 17%;
+  }
+
+  .google-icon {
+    width: 13.8%;
+  }
+
+  .trusted-by-line span {
+    width: 30%;
+  }
+
+  .footer-lists {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    row-gap: 40px;
+    column-gap: 30px;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+}
+
+@media (max-width: 345px) {
+  .footer-logo {
+    height: 25px;
+  }
+
+  .header-right {
+    width: 90%;
+  }
+
+  .header-right img {
+    width: 100%;
+  }
+
+  .free-trial-two {
+    padding: 5px 15px 5px 15px;
+    font-size: 0.8rem;
+  }
+
+  .learn-more {
+    padding: 5px 15px 5px 15px;
+    font-size: 0.8rem;
+  }
+  .version-released {
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  .qubly-container {
+    width: 90%;
+  }
+
+  .why-qubly {
+    width: 50%;
+    margin-bottom: 5%;
+    font-size: 0.9rem;
+  }
+
+  .qubly-first h2 {
+    width: 90%;
+    margin-bottom: 6%;
+    font-size: 1.5rem;
+    word-spacing: 0px;
+  }
+
+  .qubly-first p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .qubly-step-one p {
+    width: 99%;
+  }
+
+  .qubly-step-two p {
+    width: 99%;
+  }
+
+  .qubly-step-three p {
+    width: 99%;
+  }
+
+  .products-team {
+    width: 80%;
+  }
+
+  .products-group img {
+    width: 100%;
+  }
+
+  .engineering-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .for-engineers {
+    width: 87%;
+  }
+
+  .cto {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    background: linear-gradient(to top, #f4f8ff, #f4ecf9);
+  }
+
+  .cto-section {
+    width: 95%;
+  }
+
+  .cto-profile {
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .sign-up-container {
+    width: 100%;
+  }
+
+  .trusted-by-line span {
+    width: 30%;
+  }
+}
+
+@media (max-width: 325px) {
+  .google-icon {
+    width: 14.8%;
+  }
+}
