@@ -12,12 +12,12 @@ body {
 .flex {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 1.2%;
   color: #cdcdcd;
 }
 
 .logo {
-  margin-left: -30px;
+  margin-left: -1.5%;
   cursor: pointer;
   transition: all 600ms ease-in-out;
 }
@@ -82,15 +82,16 @@ button,
 }
 
 /* HERO SECTION */
+
 .text-white {
   color: #ffffff;
-  margin-left: 90px;
+  margin-left: 5%;
   font-weight: 700;
 }
 
 h1.text-white.large-Heading {
-  margin-top: 80px;
-  font-size: 80px;
+  margin-top: 5%;
+  font-size: 5rem;
 }
 
 .text-pink {
@@ -100,13 +101,13 @@ h1.text-white.large-Heading {
 
 .text-gray {
   color: #a8a8a8;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
   margin-left: 90px;
   line-height: 35px;
 }
 p.text-gray.top-Para {
-  margin-top: 60px;
+  margin-top: 4%;
 }
 
 /* Back Image */
@@ -442,4 +443,65 @@ footer > img {
 
 footer > img:hover {
   transform: scale(1.2);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR */
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo > img {
+    display: block;
+    margin: 7%;
+  }
+
+  .nav-links,
+  li,
+  .engButton,
+  .contact,
+  .btn-pink {
+    display: none;
+  }
+
+  /* HERO SECTION */
+  h1.text-white.large-Heading {
+    font-size: 1.5rem;
+    margin-left: 5%;
+    line-height: 40px;
+  }
+
+  .text-gray {
+    margin: 5%;
+  }
+
+  p.text-gray.top-Para {
+    margin-top: 4%;
+  }
+
+  .pink-button {
+    margin: 9%;
+  }
+
+  .pink-button-image {
+    display: none;
+  }
+
+  .shadowCards {
+    width: 300px;
+    top: 60%;
+    right: 25%;
+  }
+
+  .frontCards {
+    width: 300px;
+    top: 65%;
+    right: 25%;
+  }
 }
