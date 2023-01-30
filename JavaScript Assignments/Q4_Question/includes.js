@@ -6,3 +6,5 @@ const language = 'JavaScript';
 const checkValue = language.includes('Script');
 
 console.log(checkValue);
+
+console.log(language.includes('Script'));
