@@ -8,6 +8,7 @@
 
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 // const ages = [1, 2, 3, 4, 5, 6, 7];
+
 // Ques 1
 console.log('Sorted Array', ages.sort());
 console.log('Min Value', Math.min(...ages));
@@ -25,9 +26,24 @@ if (sortedArray.length % 2 === 0) {
 }
 
 // Ques 3
-
 let sum = 0;
 ages.map((individualAges) => {
   sum = sum + individualAges;
 });
-console.log('AVG', Math.floor(sum / ages.length));
+// console.log('AVG', Math.floor(sum / ages.length));
+const average = Math.floor(sum / ages.length);
+console.log('AVG', Math.floor(average));
+
+// Ques 4
+const minAge = Math.min(...ages);
+const maxAge = Math.max(...ages);
+const range = maxAge - minAge;
+console.log('range', range);
+
+// Ques 5
+const value1 = Math.abs(minAge - average);
+const value2 = Math.abs(maxAge - average);
+
+console.log('value1', value1);
+console.log('value2', value2);
+console.log(Math.abs(value1 - value2));
