@@ -211,8 +211,7 @@ p.text-gray.top-Para {
 .cardSection {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin: 150px;
   text-align: center;
 }
 
@@ -272,10 +271,7 @@ div.card.cardTop {
 }
 
 .customerPara {
-  margin-top: 80px;
-  margin-right: 300px;
-  margin-left: 300px;
-  margin-bottom: 100px;
+  margin: 50px 300px;
   color: #cdcdcd;
   font-size: 22px;
   font-weight: 300;
@@ -283,7 +279,6 @@ div.card.cardTop {
 }
 
 /* Cards */
-
 .cards {
   display: flex;
   justify-content: space-around;
@@ -462,8 +457,11 @@ footer > img:hover {
     margin: 7%;
   }
 
+  .logo:hover {
+    transform: scale(1.05);
+  }
+
   .nav-links,
-  li,
   .engButton,
   .contact,
   .btn-pink {
@@ -472,17 +470,14 @@ footer > img:hover {
 
   /* HERO SECTION */
   h1.text-white.large-Heading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 5%;
     line-height: 40px;
   }
 
   .text-gray {
     margin: 5%;
-  }
-
-  p.text-gray.top-Para {
-    margin-top: 4%;
+    font-size: 1rem;
   }
 
   .pink-button {
@@ -494,14 +489,133 @@ footer > img:hover {
   }
 
   .shadowCards {
-    width: 300px;
+    width: 320px;
     top: 60%;
-    right: 25%;
+    right: 1%;
   }
 
   .frontCards {
-    width: 300px;
+    width: 320px;
     top: 65%;
-    right: 25%;
+    right: 1%;
+  }
+
+  /* Below Image */
+
+  .belowButton {
+    margin-top: 90%;
+    margin-left: 5%;
+    font-size: 0.8rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+
+  .belowButton > img {
+    margin: -15px 20px;
+  }
+
+  /* LOGO BAR */
+  .logoBar {
+    flex-direction: row;
+    margin-top: -25%;
+  }
+  .logoBar > img {
+    padding: 20px;
+    width: 10%;
+  }
+
+  /* Payment Heading */
+  .paymentSection {
+    line-height: 25px;
+    margin: 20% 10%;
+  }
+  .paymentHeading {
+    font-size: 1rem;
+  }
+
+  .paymentParagraph {
+    margin: 0 0 0 30px;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  /* Card Section */
+  .cardSection {
+    flex-direction: column;
+    margin: 40px;
+  }
+
+  div.card.cardTop {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .card:hover {
+    transform: scale(1.08);
+  }
+
+  /* White Section */
+  .text-black,
+  .text-Pink {
+    font-size: 1.5rem;
+  }
+
+  .whitePara {
+    font-size: 1rem;
+    margin: 10%;
+  }
+
+  .lowSection > img {
+    width: 70%;
+  }
+
+  /* Customer */
+  .customerPara {
+    margin: 10%;
+    color: #cdcdcd;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+  }
+
+  /* Cards */
+  .cards {
+    flex-direction: column;
+  }
+  .customerCard {
+    margin: 25px;
+    padding: 20px;
+    width: 270px;
+  }
+  .customerCard:hover {
+    transform: scale(1.08);
+  }
+
+  .button-section {
+    margin: 10% 10%;
+    text-align: center;
+  }
+
+  .pinkBg {
+    display: none;
+  }
+
+  /* White Here */
+  footer {
+    margin: 8%;
+    width: 40%;
+    flex-direction: column;
+  }
+
+  .footerItems {
+    margin-top: 15%;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .footerItems > li {
+    padding-right: 0px;
   }
 }
