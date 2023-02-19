@@ -66,6 +66,10 @@ button,
   cursor: pointer;
 }
 
+.engButton + .btn-pink {
+  z-index: -2;
+}
+
 .engButton:hover {
   color: #808080;
   transform: scale(1.2);
@@ -211,7 +215,7 @@ p.text-gray.top-Para {
 .cardSection {
   display: flex;
   justify-content: space-evenly;
-  margin: 150px;
+  margin: 150px 0px;
   text-align: center;
 }
 
