@@ -181,6 +181,17 @@ p.text-gray.top-Para {
 }
 .logoBar > img {
   padding: 60px;
+  animation: scroll 1s infinite linear;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 /* Payment */
