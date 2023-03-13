@@ -58,7 +58,7 @@ header {
   flex-direction: row;
   list-style-type: none;
   color: #908f8f;
-  font-size: 17px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -74,7 +74,7 @@ header {
 
 .navButton {
   padding: 10px 35px;
-  font-size: 17px;
+  font-size: 1.2rem;
   font-weight: 500;
   border-radius: 30px;
   cursor: pointer;
@@ -98,7 +98,7 @@ header {
 }
 
 .text-white.heading {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 500;
 }
 
@@ -107,8 +107,8 @@ header {
 }
 
 .text-grey.headerpara {
-  margin-top: 20px;
-  font-size: 25px;
+  margin-top: 5%;
+  font-size: 1.6rem;
 }
 
 .blue-button.getStarted {
@@ -173,8 +173,8 @@ header {
 
 /* White Section */
 .bg-white {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin: 150px 0px;
+  background-color: #fff;
 }
 
 .top-section {
@@ -594,6 +594,10 @@ cite {
   margin: 0px 120px;
   background-color: #3f3e3e;
 }
+.white-line2 {
+  margin: 0px 120px;
+  background-color: #3f3e3e;
+}
 
 /* Footer */
 
@@ -624,4 +628,342 @@ footer {
   margin-left: 120px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  /* NAVBAR */
+  .nav-items {
+    display: none;
+  }
+
+  .logo > img:hover {
+    transform: scale(1.1);
+  }
+
+  .navButton {
+    padding: 0.7em 2em;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .navButton:hover {
+    transform: scale(1.1);
+  }
+
+  /* Header */
+  .flex {
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 50px 25px;
+  }
+
+  .text-white.heading {
+    font-size: 2.5rem;
+  }
+
+  .text-grey.headerpara {
+    margin-top: 10%;
+    font-size: 1.5rem;
+  }
+
+  .blue-button.getStarted {
+    padding: 1em 2em;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .blue-button.getStarted:hover {
+    transform: scale(1.1);
+  }
+
+  .transparent-button {
+    margin: 10% 0%;
+    padding: 1rem 2.2rem;
+    font-size: 1rem;
+  }
+
+  .transparent-button:hover {
+    transform: scale(1.1);
+  }
+
+  .left-side > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-side > img {
+    margin-top: 15%;
+    width: 280px;
+    padding: 1rem;
+  }
+
+  .logoBar {
+    display: flex;
+    flex-direction: row !important;
+    padding: 20px;
+  }
+
+  .logoBar > img {
+    width: 60px;
+    padding: 0px 10px;
+  }
+
+  /* White Section */
+  .bg-white {
+    margin: 0px;
+    background-color: #ffffff;
+  }
+
+  .text-black.heading {
+    padding-top: 15%;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  /* CARD */
+  .lower-section {
+    flex-direction: column;
+    margin: 70px 40px -30px 40px;
+  }
+
+  .card {
+    padding: 10px;
+    padding-bottom: 40px;
+    margin: 0px 0px 80px 0px;
+    width: 270px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card > p {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .card.bg-black {
+    margin-top: 0px 0px 60px 0px;
+  }
+
+  .card.bg-black:hover {
+    transform: scale(1.05);
+  }
+
+  /* WHITE SECTION */
+  .bg-white {
+    background: #fff;
+  }
+
+  .text-black.belowCardheading {
+    text-align: center;
+    margin: 10px 20px;
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+
+  .button-flex {
+    margin-top: -30px;
+  }
+
+  .bigButton {
+    margin: 10px 0px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .smallSize > img {
+    margin-top: -15px;
+  }
+  .bigButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 7px 9px #aeadad;
+  }
+
+  .float-right {
+    float: right;
+    padding-left: 1rem;
+    width: 30px;
+  }
+
+  /* RIGHT SIDE */
+  .right-side.bg-black {
+    margin: 20% 0%;
+    padding: 20px;
+  }
+
+  .bg-gray.text-white.dot {
+    display: flex;
+  }
+  .bg-gray.text-white.dot::before {
+    margin-top: 13px;
+    height: 20px;
+    width: 25px;
+  }
+
+  .bg-gray.text-white {
+    font-size: 1rem;
+    margin: 20px 0px;
+    padding: 10px;
+  }
+  .bg-gray.text-white:hover {
+    transform: scale(1.05);
+  }
+  /* PLAN SECTION */
+  /* Image Section */
+  .ImageSection {
+    padding-top: 40px;
+    margin: 0px 20px;
+  }
+
+  .ImageSection > img {
+    padding: 50px 0px;
+    width: 40px;
+  }
+
+  .ImageSection > h1 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  /* Plan Card */
+  .PlanCard {
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+
+  .plan {
+    margin: 30px 0px;
+    width: 280px;
+  }
+  .plan:hover {
+    transform: scale(1.05);
+  }
+
+  .planHeading {
+    font-size: 1.5rem;
+  }
+
+  .planPrice {
+    font-size: 2rem;
+  }
+
+  .small-text {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  .planButton,
+  .planButton2,
+  .planButton3 {
+    padding: 10px 100px;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+  .icon2,
+  .icon {
+    display: flex;
+  }
+
+  /* Customer Section */
+  .customer {
+    background-color: #ffffff;
+    padding: 40px 10px;
+  }
+  .customerheading {
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+
+  .customerpara {
+    font-size: 20px;
+    margin: 20px 20px;
+  }
+
+  /* Reviews */
+  .reviewSection {
+    margin: 30px 0px;
+  }
+
+  .review {
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .customerPara {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+
+  .stars {
+    margin-top: 40px;
+  }
+  .review-2 {
+    background-color: #fff;
+  }
+
+  /* LAST SECTION */
+  .lastSection {
+    text-align: center;
+    padding: 40px 0px;
+  }
+  .Lastheading {
+    margin: 10px;
+  }
+  .text-white.singup {
+    font-size: 1.5rem;
+  }
+  /* CONTACT */
+  .contactForm {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .contactForm > input {
+    font-size: 0.8rem;
+    padding: 15px 25px;
+    border-radius: 40px;
+    margin: 20px 0px;
+    border: none;
+  }
+
+  .blue-Button.signup {
+    margin: 20px 0px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-size: 1rem;
+    border: none;
+  }
+
+  /* WHITE LINE */
+  .white-line {
+    margin: 40px 20px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    padding: 0px 0px 20px 30px;
+    margin-top: -40px;
+  }
+
+  .white-line2 {
+    margin: 0px 20px;
+  }
 }
