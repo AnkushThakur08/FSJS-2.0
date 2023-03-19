@@ -8,11 +8,7 @@ body {
 }
 
 .bg-image {
-  background-image: linear-gradient(
-      rgba(81, 83, 87, 0.999),
-      rgba(13, 13, 13, 0.999)
-    ),
-    url('../Assets/Photos/futuristic-bg.png');
+  background-image: linear-gradient(rgba(81, 83, 87, 0.999), rgba(13, 13, 13, 0.999)), url('../Assets/Photos/futuristic-bg.png');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -23,11 +19,15 @@ body {
 .bg-transparent {
   background-color: transparent;
   color: #ffffff;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
 }
 
 .bg-orange {
   background-color: #f4694c;
   color: #ffffff;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
   border: none;
 }
 
@@ -72,6 +72,15 @@ nav {
   padding: 40px;
 }
 
+.logo > img {
+  cursor: pointer;
+  transition: all 600ms ease-in-out;
+}
+
+.logo > img:hover {
+  transform: scale(1.2);
+}
+
 .nav-items {
   color: #ffffff;
   display: flex;
@@ -84,6 +93,12 @@ nav {
   padding-right: 30px;
   font-weight: 500;
   cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+  color: #b9b5b5;
 }
 
 .buttons {
@@ -93,6 +108,29 @@ nav {
 .nav-button {
   padding: 10px 25px;
   font-size: 20px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  border: none;
+}
+
+.buttons .bg-orange.nav-button:hover,
+.headerButton:hover {
+  transform: scale(1.2);
+  background-color: #ffffff;
+  color: #f4694c;
+}
+
+.buttons .bg-transparent.nav-button:hover,
+.headerButton.white:hover {
+  transform: scale(1.2);
+  background-color: #ffffff;
+  color: #000308;
+}
+
+.buttons .bg-transparent.nav-button {
+  border: 1px solid #ffffff;
+  padding: 13px 25px;
+  margin-right: 1rem;
 }
 
 /* Header */
@@ -117,6 +155,7 @@ header {
 .headerButton {
   margin-top: 50px;
 }
+
 .headerButton.white {
   border: 1px solid #ffffff;
   margin-left: 30px;
@@ -229,6 +268,11 @@ header {
   border: none;
 }
 
+.bg-orange.card-button.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 7px 9px #353333;
+}
+
 /*EXPLORE SECTION  */
 .explore {
   margin: 80px;
@@ -269,6 +313,12 @@ header {
   font-size: 20px;
   border: none;
   margin-right: 30px;
+  transition: all 500ms ease-in-out;
+}
+.buttons > .bg-orange:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 7px 9px #353333;
+  background-color: #000308;
 }
 
 .buttons > .bg-transparent.text-white {
@@ -276,6 +326,14 @@ header {
   font-size: 20px;
   color: #f4694c;
   border: 1px solid #f4694c;
+}
+
+.buttons > .bg-transparent.text-white:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 7px 9px #353333;
+  background-color: #000308;
+  color: #ffffff;
+  border: none;
 }
 
 /* Recommend Section */
@@ -336,6 +394,13 @@ header {
   border: none;
 }
 
+.bg-orange.card-button:hover {
+  margin-top: 20px;
+  padding: 15px 35px;
+  font-size: 20px;
+  border: none;
+}
+
 /* BLACK SECTION */
 .bg-black > .text-white {
   text-align: center;
@@ -349,7 +414,15 @@ section > .flex {
 }
 .images-section > img {
   margin-right: 60px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
   width: 400px;
+}
+
+.images-section > img:hover {
+  transform: scale(1.1);
+  filter: sepia(0.1);
+  filter: saturate(1.5);
 }
 
 .gameOfWorld {
@@ -364,24 +437,33 @@ section > .flex {
   height: 400px;
   margin-left: 50px;
   margin-top: -50px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.devilgirl:hover {
+  transform: scale(1.1);
+  filter: sepia(0.1);
+  filter: saturate(1.2);
 }
 
 .archiman {
   width: 300px;
-
   margin-left: 90px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.archiman:hover {
+  transform: scale(1.1);
+  filter: sepia(0.1);
+  filter: saturate(1.5);
 }
 
 /* CSS */
 .unforgettable {
   margin-top: 150px;
   height: 500px;
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(../Assets/Photos/Rectangle\ 606.png);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../Assets/Photos/Rectangle\ 606.png);
   background-position: center;
   background-size: cover;
 }
@@ -474,4 +556,239 @@ footer {
 .line {
   padding-top: 1.5em;
   padding-bottom: 4em;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    background-color: #ffffff;
+  }
+
+  /* NAV */
+  nav {
+    justify-content: flex-start;
+  }
+  .nav-items {
+    display: none;
+  }
+
+  nav > .buttons {
+    display: none;
+  }
+
+  /* Header */
+  header {
+    flex-direction: column;
+    margin: 20px 20px;
+  }
+
+  /* LEFT SECTION */
+
+  .heading {
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+
+  .NavigationButton {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerButton.white {
+    margin-left: 0px;
+  }
+  .NavigationButton > button:hover {
+    transform: scale(1.1) !important;
+  }
+
+  /* RIGHT SECTION */
+  .header-right {
+    text-align: center;
+  }
+
+  .playButton {
+    margin: 50px 20px;
+  }
+
+  .arrow {
+    margin-left: 10px;
+  }
+
+  .bg-image {
+    height: 140vh;
+  }
+
+  /* GAME SECTION */
+  .gameSection {
+    text-align: center;
+    margin: 20px 10px;
+  }
+
+  .gameSection > h1 {
+    font-size: 2rem;
+  }
+
+  /* CARDS */
+  .game-cards {
+    flex-direction: column;
+  }
+
+  .card.hover {
+    transition: all 500ms ease;
+    cursor: pointer;
+    margin: 20px 0px;
+  }
+
+  .card-text > .text-white {
+    font-size: 1rem;
+  }
+
+  .bg-card1,
+  .bg-card2,
+  .bg-card3,
+  .bg-card4 {
+    width: 321px;
+    margin-left: 8px;
+  }
+
+  .bg-orange.card-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+
+  /*EXPLORE SECTION  */
+  .explore {
+    margin: 50px 20px;
+    flex-direction: column;
+  }
+
+  .explore > div > img {
+    width: 330px;
+    height: 330px;
+    margin-right: 0px;
+  }
+
+  .explore > div > img:hover {
+    transform: scale(1.05);
+  }
+
+  .explore > div > .text-black {
+    margin: 20px 0px;
+    font-size: 1.5rem;
+  }
+
+  .explore > div > .text-grey {
+    line-height: 30px;
+  }
+
+  .explore > div > .buttons {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .buttons > .bg-orange,
+  .bg-transparent {
+    margin: 5%;
+  }
+  .buttons > .bg-orange:hover {
+    transform: scale(1.1);
+  }
+
+  .buttons > .bg-transparent.text-white {
+    margin-right: 20px;
+  }
+
+  .buttons > .bg-transparent.text-white:hover {
+    transform: scale(1.1);
+  }
+
+  /* RECOMMENDATION SECTION */
+  .recommended {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .recommended > div > .text-black {
+    font-size: 2rem;
+  }
+  .lightButton,
+  .darkButton {
+    margin-top: 15px;
+  }
+  /* CARD */
+
+  .recommended-card {
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  .recommended-card-image {
+    margin: -30px 40px 20px 0px;
+  }
+  .extra {
+    margin-top: -80px;
+  }
+
+  .recommended-card-image:hover {
+    transform: scale(1.1);
+  }
+
+  /* Most PLayed game  */
+  .bg-black > .text-white {
+    font-size: 2rem;
+    margin-bottom: -20%;
+  }
+
+  section > .flex {
+    margin-left: 20px;
+    flex-direction: column;
+  }
+
+  .images-section > img,
+  .devilgirl,
+  .archiman {
+    margin: 20px;
+    margin-left: 8px;
+    width: 300px;
+  }
+
+  .images-section > img:hover,
+  .devilgirl:hover,
+  .archiman:hover {
+    transform: scale(1.05);
+  }
+
+  .gameOfWorld {
+    display: none;
+  }
+
+  .flex > div > .text-grey {
+    margin: 10%;
+  }
+
+  /* Unforget */
+  .unforgettable {
+    margin-top: -10%;
+  }
+  .unforgettable-content > h2 {
+    font-size: 2rem;
+  }
+  .unforgettable-content > p {
+    font-size: 1rem;
+  }
+
+  /*Footer  */
+
+  .footer-lists {
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  .footer-listone img {
+    margin-top: 20px;
+  }
 }
