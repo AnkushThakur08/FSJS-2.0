@@ -520,12 +520,6 @@ footer {
   margin-bottom: 1em;
   cursor: pointer;
 }
-.articles,
-.leagues,
-.team,
-.get-in {
-  margin-top: -30%;
-}
 
 .footer-listone p:hover {
   color: #dfdfdf;
@@ -796,5 +790,11 @@ footer {
 
   .footer-listone img {
     margin-top: 20px;
+  }
+  .articles,
+  .leagues,
+  .team,
+  .get-in {
+    margin-top: -30%;
   }
 }

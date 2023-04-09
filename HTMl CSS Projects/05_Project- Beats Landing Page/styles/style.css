@@ -19,7 +19,15 @@ nav {
   align-items: center;
   margin-top: 60px;
 }
+.page-logo > img{
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
 
+.page-logo > img:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+}
 .nav-items {
   list-style-type: none;
   display: flex;
@@ -31,6 +39,12 @@ nav {
 .nav-item {
   margin-left: 40px;
   margin-right: 40px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.nav-item:hover{
+  transform: scale(1.4)
 }
 
 .nav-button > button {
@@ -41,6 +55,14 @@ nav {
   color: #ffffff;
   padding: 10px 40px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.nav-button > button:hover{
+  transform: scale(1.2);
+  background-color: #ffffff;
+  color:#363636;
 }
 
 /* HEADER */
@@ -84,6 +106,13 @@ button {
   color: #ffffff;
   padding: 10px 25px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.Add-to-bag:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 7px 9px #616168;
 }
 
 .Add-to-bag::before {
@@ -109,9 +138,22 @@ button {
 
 .brand-section > img {
   width: 90px;
+  animation: scroll 1s infinite linear;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-20px);
+  }
 }
 
 /* SPEC */
+
+
 .spec {
   text-align: center;
 }
@@ -163,6 +205,16 @@ button {
 
 .mic {
   margin-right: -42%;
+}
+
+.headphone{
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.headphone:hover{
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
 }
 
 /* CASE */
