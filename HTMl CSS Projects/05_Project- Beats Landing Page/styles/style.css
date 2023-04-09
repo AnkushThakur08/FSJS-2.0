@@ -19,12 +19,12 @@ nav {
   align-items: center;
   margin-top: 60px;
 }
-.page-logo > img{
+.page-logo > img {
   cursor: pointer;
   transition: all 500ms ease-in-out;
 }
 
-.page-logo > img:hover{
+.page-logo > img:hover {
   cursor: pointer;
   transform: scale(1.5);
 }
@@ -43,8 +43,8 @@ nav {
   transition: all 500ms ease-in-out;
 }
 
-.nav-item:hover{
-  transform: scale(1.4)
+.nav-item:hover {
+  transform: scale(1.4);
 }
 
 .nav-button > button {
@@ -59,10 +59,10 @@ nav {
   transition: all 500ms ease-in-out;
 }
 
-.nav-button > button:hover{
+.nav-button > button:hover {
   transform: scale(1.2);
   background-color: #ffffff;
-  color:#363636;
+  color: #363636;
 }
 
 /* HEADER */
@@ -110,7 +110,7 @@ button {
   transition: all 500ms ease-in-out;
 }
 
-.Add-to-bag:hover{
+.Add-to-bag:hover {
   transform: scale(1.2);
   box-shadow: 0px 7px 9px #616168;
 }
@@ -153,7 +153,6 @@ button {
 
 /* SPEC */
 
-
 .spec {
   text-align: center;
 }
@@ -166,6 +165,20 @@ button {
 
 .spec-section > div > .top-bottom > img {
   margin-left: -50%;
+  cursor: pointer;
+}
+.spec-section > div > .top-bottom > img:hover {
+  animation: shake 400ms;
+}
+
+@keyframes shake {
+  25% {
+    transform: rotate(25deg);
+  }
+
+  75% {
+    transform: rotate(-25deg);
+  }
 }
 
 .spec-section > div > .top-bottom > p {
@@ -183,6 +196,11 @@ button {
 
 .middle > img {
   margin-left: -80%;
+  cursor: pointer;
+}
+
+.middle > img:hover {
+  animation: shake 400ms;
 }
 
 .middle > p {
@@ -207,14 +225,14 @@ button {
   margin-right: -42%;
 }
 
-.headphone{
+.headphone {
   cursor: pointer;
-  transition: all 500ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
-.headphone:hover{
+.headphone:hover {
   cursor: pointer;
-  transition: all 500ms ease-in-out;
+  transform: scale(1.2);
 }
 
 /* CASE */
@@ -237,6 +255,12 @@ button {
 
 .case-image > img {
   margin-left: 70%;
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+}
+
+.case-image > img:hover {
+  transform: scale(1.2);
 }
 
 .case-section > div > p {
@@ -300,9 +324,29 @@ button {
   color: #ffffff;
   padding: 10px 25px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
 }
+
+.gray-left-side > button:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 12px 12px #000000;
+}
+
 .gray-section > div > img {
   margin-left: 30%;
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* STYLE SECTION */
@@ -340,6 +384,12 @@ button {
   width: 70%;
   margin: auto;
   transform: translateY(-35%);
+  cursor: pointer;
+  transition: all 1000ms ease-in-out;
+}
+
+.item-img img:hover {
+  transform: scale(1.8);
 }
 
 .style-content {
@@ -366,6 +416,11 @@ button {
 
 .style-shop-bag img {
   margin: 10px 13px 5px 13px;
+  cursor: pointer;
+}
+
+.style-shop-bag img:hover {
+  animation: shake 400ms;
 }
 
 .style-container {
@@ -422,12 +477,26 @@ footer {
   flex-wrap: wrap;
   row-gap: 20px;
 }
+.footer-logo > img {
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.footer-logo > img:hover {
+  transform: scale(1.5);
+}
 
 .footer-lists ul li {
   list-style-type: none;
   margin-bottom: 10%;
   font-size: 0.9rem;
   color: #a3a6a8;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.footer-lists ul li:hover {
+  transform: scale(1.3);
 }
 
 .footer-lists h4 {
@@ -440,6 +509,12 @@ footer {
 .social img {
   margin-right: 2%;
   width: 10%;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.social img:hover {
+  transform: scale(1.4);
 }
 
 .up-arrow {
