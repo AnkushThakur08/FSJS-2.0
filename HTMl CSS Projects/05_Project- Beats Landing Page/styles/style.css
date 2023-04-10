@@ -556,3 +556,111 @@ footer {
 .mic {
   width: 70%;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* navbar */
+  .nav-items {
+    display: none;
+  }
+
+  .page-logo > img {
+    margin-left: -85%;
+  }
+
+  .nav-button {
+    margin-top: -5%;
+    margin-right: -30px;
+  }
+
+  /* HEADER */
+
+  .bg-headphone > img {
+    display: none;
+  }
+
+  .on-ear {
+    width: 70%;
+    margin: 12% 0% 5% 6%;
+  }
+
+  .text-white.para {
+    width: auto;
+  }
+
+  .Add-to-bag {
+    margin-top: 5%;
+  }
+
+  .Add-to-bag:hover {
+    transform: scale(1.1);
+  }
+
+  /* LogoBar */
+
+  .brand-section {
+    margin: 100px 0px;
+  }
+
+  .brand-section > img {
+    width: 60px;
+  }
+
+  /* Spec Section */
+
+  .spec-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .headphone {
+    width: 250px;
+  }
+
+  /* Case Section */
+  .case {
+    margin-top: -10%;
+  }
+
+  .case-section {
+    flex-direction: column;
+  }
+
+  .case-image {
+    margin-top: 10%;
+  }
+
+  .case-image > img {
+    margin: 0px;
+    width: 250px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+
+  .case-image > img:hover {
+    transform: scale(1.1);
+  }
+
+  .case-section > div > .text-white {
+    margin: 20px;
+    width: auto;
+  }
+
+  /* Immerse */
+  .gray-section {
+    flex-direction: column;
+  }
+  .center {
+    margin-left: -70px;
+  }
+
+  .gray-section > div > img {
+    margin: 0px;
+    margin-top: 90px;
+    margin-left: 0px;
+  }
+}
