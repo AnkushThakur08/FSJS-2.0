@@ -469,7 +469,7 @@ hr {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 110%;
+    width: auto;
     /* filter: blur(0.88px); */
   }
 
@@ -500,7 +500,7 @@ hr {
   }
 
   .top-heading {
-    padding: 5px;
+    padding: 0px;
     text-align: center;
   }
 
@@ -511,11 +511,12 @@ hr {
 
   .top-bottom-section {
     align-items: center;
+    margin: 5% 0%;
   }
 
   .top-bottom-section > p {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin: 20px 10px;
   }
 
   .mobile-text {
@@ -529,8 +530,8 @@ hr {
   /* Logo Bar */
 
   .logo-bar {
-    margin: -20px -30px 10px 10px;
-    padding: 25px;
+    margin: -20px 10px 10px 10px;
+    padding: 25px 20px;
     padding-bottom: 10px;
   }
 
@@ -550,13 +551,13 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0% 10% 10%;
+    margin: 10% 5% 10% 5%;
   }
 
   /* ROW - 1 */
   .card > img {
-    height: 370px;
-    width: 370px;
+    height: 330px;
+    width: 320px;
   }
 
   .card > img:hover {
@@ -564,11 +565,11 @@ hr {
   }
 
   .content {
-    padding: 10px 35px;
+    padding: 10px 10px;
     margin: -70px -10% 5% 0%;
   }
   .content.Two {
-    padding-right: 11.5%;
+    padding-right: 5.5%;
   }
 
   .about {
@@ -611,17 +612,17 @@ hr {
     align-items: center;
   }
   .bg-image {
-    width: 380px;
-    margin-left: 70px;
+    width: 370px;
+    margin-left: 110px;
   }
 
   .home-image {
     position: relative;
     border-radius: 30px;
-    width: 280px;
+    width: 270px;
     height: 240px;
     top: -350px;
-    left: 140px;
+    left: 178px;
   }
   .text-Affordable {
     margin-top: -10%;
@@ -637,7 +638,7 @@ hr {
 
   .bgImage2 {
     width: 380px;
-    margin-left: 70px;
+    margin-left: -20px;
     margin-top: 250px;
   }
 
@@ -650,8 +651,8 @@ hr {
     border-radius: 30px;
     width: 280px;
     height: 240px;
-    top: -340px;
-    left: 100px;
+    top: -360px;
+    left: 12px;
   }
 
   .text2 {
