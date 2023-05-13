@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .open {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      body {
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body></body>
+  <script>
+    let body = document.querySelector('body');
+
+    body.addEventListener('click', function (event) {
+      console.log('Clicked');
+      let element = document.createElement('div');
+      element.classList.add('open');
+      console.log(element);
+      element.style.left = event.clientX - 10 + 'px';
+      element.style.top = event.clientY - 10 + 'px';
+      body.appendChild(element);
+
+      let letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color = color + letters[Math.floor(Math.random() * 16)];
+      }
+      console.log(color);
+      element.style.backgroundColor = color;
+
+      // let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      // element.style.backgroundColor = '#' + randomColor;
+      // console.log('RandomColor', randomColor);
+    });
+  </script>
+</html>

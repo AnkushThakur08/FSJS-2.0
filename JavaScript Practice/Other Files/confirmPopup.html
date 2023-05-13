@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>User pressed</h1>
+    <p class="para">Check</p>
+    <script>
+      // CONFIRM
+      //   let value = confirm('Are you sure');
+      //   if (value) {
+      //     document.querySelector('.para').innerText = 'He pressed OK';
+      //   } else {
+      //     document.querySelector('.para').innerText = 'He pressed CANCEL';
+      //   }
+
+      let result = prompt('Answe this: 20-10');
+      if (result == 10) {
+        document.querySelector('.para').innerText = 'TRUE';
+        document.querySelector('.para').style.color = 'green';
+        document.querySelector('.para').style.fontWeight = 'bold';
+      } else {
+        document.querySelector('.para').innerText = 'FALSE';
+        document.querySelector('.para').style.color = 'red';
+        document.querySelector('.para').style.fontWeight = 'bold';
+      }
+    </script>
+  </body>
+</html>
