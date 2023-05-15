@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DOM Practice</h1>
+
+    <ul class="ul_list">
+      <li>ReactJS</li>
+      <li>AngularJS</li>
+      <li class="removeChild">VueJS</li>
+    </ul>
+  </body>
+  <script>
+    let element = document.createElement('h1');
+
+    (element.textContent = 'Hello, My name is Ankush Thakur, currently learning DOM'), (element.style.color = 'blue');
+    element.style.fontSize = '30px';
+
+    document.body.appendChild(element);
+
+    // ADD li
+
+    /* let listItem = document.createElement('li');
+
+    listItem.textContent = 'NodeJS';
+    listItem.style.color = 'green';
+    listItem.style.fontSize = '20px';
+    listItem.style.fontWeight = 'bold';
+
+    console.log(listItem);
+
+    document.querySelector('.ul_list').appendChild(listItem); */
+
+    // Remove Child
+
+    let unorderList = document.querySelector('.ul_list');
+    console.log(unorderList);
+
+    let removeItem = document.querySelector('.removeChild');
+
+    unorderList.removeChild(removeItem);
+  </script>
+</html>
