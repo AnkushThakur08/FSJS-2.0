@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Creating by Looping through it</h1>
+    <ul></ul>
+  </body>
+
+  <script>
+    for (let i = 0; i <= 5; i++) {
+      let customList = document.createElement('li');
+
+      customList.style.fontSize = '30px';
+      customList.style.color = 'blue';
+      customList.textContent = i;
+      console.log(customList);
+      document.body.appendChild(customList);
+    }
+  </script>
+</html>
