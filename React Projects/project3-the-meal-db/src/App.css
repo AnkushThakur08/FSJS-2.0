@@ -1,0 +1,59 @@
+.App {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+form{
+  margin:24px;
+}
+
+.search-box{
+  padding: 10px;
+  border: 2px dotted black;
+}
+
+.search-button{
+  padding: 10px;
+  margin: 5px 10px;
+}
+
+
+
+.meal-name{
+  font-family: Georgia, serif;
+  font-size:40px;
+  color:white;
+  padding:10px;
+  background-color:rgba(0,0,0, 0.8);
+}
+
+.meal-img{
+  width: 300px;
+  border: 2px solid black;
+  border-radius:50%;
+}
+
+h2{
+  text-align:center;
+}
+
+.ingredients{
+  width:300px;
+  text-align:left;
+  margin:32px auto;
+  padding:24px;
+  font-size: 16px;
+  background-color: rgba(0,255,0,0.2);
+}
+
+.instructions{
+  width:800px;
+  text-align:left;
+  margin:32px auto;
+  padding:24px;
+  line-height: 35px;
+  font-size: 16px;
+  background-color: rgba(0,120,255,0.3);
+}

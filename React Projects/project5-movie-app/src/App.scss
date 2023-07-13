@@ -1,0 +1,142 @@
+.App {
+    text-align: center;
+}
+
+form {
+    margin: 40px auto;
+
+    input {
+        width: 300px;
+        padding: 8px 8px;
+        margin: 0 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.empty-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid black;
+    width: 1080px;
+    height: 550px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    div{
+        font-size: 40px;
+    }
+
+    .arrow{
+        font-size: 56px;
+        margin-top: 32px;
+    }
+}
+
+.movie-card {
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    width: fit-content;
+    margin: 50px auto;
+
+    .movie-heading {
+        background-color: rgb(61, 5, 5);
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 40px;
+            padding: 0;
+            margin: 16px 0;
+        }
+
+        p {
+            font-size: large;
+            margin: 8px 0 0 40px;
+        }
+    }
+
+    .movie-details {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.description-block {
+    width: 700px;
+    padding: 10px 20px;
+    margin: 0 24px;
+}
+
+.movie-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .movie-stats {
+        display: flex;
+        align-items: center;
+        padding: 0 0 24px 0;
+        color: rgb(59, 58, 58);
+
+        .vertical-line {
+            width: 2px;
+            height: 20px;
+            background-color: rgb(141, 137, 137);
+
+            margin: 0 5px;
+        }
+    }
+}
+
+.movie-stats2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(79, 79, 78);
+
+    .movie-language,
+    .movie-release-data {
+        margin: 0 10px;
+    }
+}
+
+.movie-plot {
+    font-size: 24px;
+    padding: 16px;
+    background-color: beige;
+}
+
+.movie-img {
+    padding: 16px;
+}
+
+.movie-director,
+.movie-writer,
+.movie-actors {
+    font-size: 20px;
+    background-color: aquamarine;
+    padding: 5px;
+    margin: 0;
+}
+
+.movie-collection {
+    font-size: 24px;
+    margin: 0;
+}

@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.search-pokemon{
+  margin: 40px auto;
+
+  input{
+    width: 300px;;
+    padding: 8px 8px;
+    margin: 0 10px;
+    
+  }
+
+  button{
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+    
+  }
+}
+
+.pokemon{
+  width: 450px;
+  border :5px solid rgb(244, 253, 1);
+  margin : 50px auto;
+  background-color: orange;
+
+  .pokemon-stats{
+    display: flex;
+    padding:20px;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+      font-weight: bolder;
+      font-size: 32px;
+    }
+  }
+
+  .pokemon-img{
+    width: 300px;
+  }
+
+  .stats{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    p{
+      margin: 10px 0;
+      font-weight: 900;
+    }
+  }
+}
